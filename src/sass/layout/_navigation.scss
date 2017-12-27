@@ -1,0 +1,33 @@
+$getCallBg: #4c3823;
+nav {
+    padding-top: 50px;
+    .navbar-brand {
+        margin-top: -30px;
+    }
+    #navbar {
+        font-family: 'Open Sans', sans-serif;
+        .left-navbar {
+            li {
+                font-size: 1.8rem;
+                a {}
+            }
+        }
+        .navbar-right {
+            .right-phone {
+                margin-top: -20px;
+                p {
+                    font-size: 2.2rem;
+                    text-align: center;
+                    padding-bottom: 10px;
+                }
+                .get-call {
+                    font-size: 1.9rem;
+                    background-color: $getCallBg;
+                    color: #fff;
+                    padding: 10px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
