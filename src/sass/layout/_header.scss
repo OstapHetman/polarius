@@ -1,0 +1,57 @@
+$viewMoreBtnBG: #fde24c;
+$carouselIndicators: #eab873;
+#myCarousel {
+    margin-top: -130px;
+    .carousel-indicators {
+        li {
+            &.active {
+                background-color: $viewMoreBtnBG;
+            }
+            border-color: $carouselIndicators;
+        }
+    }
+    .carousel-inner {
+        .item {
+            &.active {
+                background-image: url('../img/header/header-1.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                -ms-background-size: cover;
+                -o-background-size: cover;
+                -moz-background-size: cover;
+                -webkit-background-size: cover;
+                background-position: center center;
+                min-height: 900px;
+            }
+            background-image: url('../img/header/header-1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            -ms-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-position: center center;
+            min-height: 900px;
+        }
+    }
+    .carousel-caption {
+        font-family: 'RoadRadio-Bold';
+        bottom: 245px;
+        h1 {
+            font-size: 6rem;
+            text-transform: uppercase;
+        }
+        .view-more {
+            background-color: $viewMoreBtnBG;
+            color: #000;
+            font-size: 2rem;
+            padding: 20px 40px 20px 40px;
+            text-align: center;
+            margin-top: 40px;
+            display: inline-block;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -414,9 +414,9 @@ header {
   font-style: normal; }
 
 @font-face {
-  font-family: 'RoadRadio';
-  src: url("RoadRadio-Bold.eot");
-  src: local("RoadRadio-Bold"), url("RoadRadio-Bold.eot?#iefix") format("embedded-opentype"), url("RoadRadio-Bold.woff") format("woff"), url("RoadRadio-Bold.ttf") format("truetype");
+  font-family: 'RoadRadio-Bold';
+  src: url("../fonts/RoadRadio/RoadRadio-Bold.eot");
+  src: local("../fonts/RoadRadio/RoadRadio-Bold"), url("../fonts/RoadRadio/RoadRadio-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/RoadRadio/RoadRadio-Bold.woff") format("woff"), url("../fonts/RoadRadio/RoadRadio-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
@@ -428,25 +428,78 @@ header {
   font-style: normal; }
 
 nav {
-  padding-top: 50px; }
+  padding-top: 50px;
+  z-index: 999; }
   nav .navbar-brand {
     margin-top: -30px; }
   nav #navbar {
     font-family: 'Open Sans', sans-serif; }
     nav #navbar .left-navbar li {
       font-size: 1.8rem; }
+      nav #navbar .left-navbar li:hover {
+        background-color: none; }
+      nav #navbar .left-navbar li a {
+        color: white; }
+        nav #navbar .left-navbar li a:hover {
+          text-decoration: none;
+          background-color: unset; }
     nav #navbar .navbar-right .right-phone {
       margin-top: -20px; }
       nav #navbar .navbar-right .right-phone p {
         font-size: 2.2rem;
         text-align: center;
-        padding-bottom: 10px; }
+        padding-bottom: 10px;
+        color: white; }
       nav #navbar .navbar-right .right-phone .get-call {
         font-size: 1.9rem;
         background-color: #4c3823;
         color: #fff;
         padding: 10px;
-        text-align: center; }
+        text-align: center;
+        text-decoration: none; }
+
+#myCarousel {
+  margin-top: -130px; }
+  #myCarousel .carousel-indicators li {
+    border-color: #eab873; }
+    #myCarousel .carousel-indicators li.active {
+      background-color: #fde24c; }
+  #myCarousel .carousel-inner .item {
+    background-image: url("../img/header/header-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+    min-height: 900px; }
+    #myCarousel .carousel-inner .item.active {
+      background-image: url("../img/header/header-1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      -ms-background-size: cover;
+      -o-background-size: cover;
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
+      background-position: center center;
+      min-height: 900px; }
+  #myCarousel .carousel-caption {
+    font-family: 'RoadRadio-Bold';
+    bottom: 245px; }
+    #myCarousel .carousel-caption h1 {
+      font-size: 6rem;
+      text-transform: uppercase; }
+    #myCarousel .carousel-caption .view-more {
+      background-color: #fde24c;
+      color: #000;
+      font-size: 2rem;
+      padding: 20px 40px 20px 40px;
+      text-align: center;
+      margin-top: 40px;
+      display: inline-block; }
+      #myCarousel .carousel-caption .view-more:hover {
+        text-decoration: none; }
 
 /*================ 
     Media Query 

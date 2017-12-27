@@ -1,6 +1,7 @@
 $getCallBg: #4c3823;
 nav {
     padding-top: 50px;
+    z-index: 999;
     .navbar-brand {
         margin-top: -30px;
     }
@@ -9,7 +10,16 @@ nav {
         .left-navbar {
             li {
                 font-size: 1.8rem;
-                a {}
+                &:hover {
+                    background-color: none;
+                }
+                a {
+                    color: white;
+                    &:hover {
+                        text-decoration: none;
+                        background-color: unset;
+                    }
+                }
             }
         }
         .navbar-right {
@@ -19,6 +29,7 @@ nav {
                     font-size: 2.2rem;
                     text-align: center;
                     padding-bottom: 10px;
+                    color: white;
                 }
                 .get-call {
                     font-size: 1.9rem;
@@ -26,6 +37,7 @@ nav {
                     color: #fff;
                     padding: 10px;
                     text-align: center;
+                    text-decoration: none;
                 }
             }
         }

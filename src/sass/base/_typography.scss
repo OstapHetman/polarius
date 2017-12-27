@@ -27,9 +27,9 @@ header {
 }
 
 @font-face {
-    font-family: 'RoadRadio';
-    src: url('RoadRadio-Bold.eot');
-    src: local('RoadRadio-Bold'), url('RoadRadio-Bold.eot?#iefix') format('embedded-opentype'), url('RoadRadio-Bold.woff') format('woff'), url('RoadRadio-Bold.ttf') format('truetype');
+    font-family: 'RoadRadio-Bold';
+    src: url('../fonts/RoadRadio/RoadRadio-Bold.eot');
+    src: local('../fonts/RoadRadio/RoadRadio-Bold'), url('../fonts/RoadRadio/RoadRadio-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/RoadRadio/RoadRadio-Bold.woff') format('woff'), url('../fonts/RoadRadio/RoadRadio-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
