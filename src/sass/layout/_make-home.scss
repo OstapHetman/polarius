@@ -1,0 +1,27 @@
+$headerTextColor: #6a3f03;
+$underHeaadText: #af9878;
+#make-your-home {
+    min-height: 620px;
+    .head-text {
+        h2 {
+            color: $headerTextColor;
+            font-size: 12rem;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            padding-top: 90px;
+        }
+    }
+    .under-head-text {
+        h4 {
+            text-align: center;
+            color: $underHeaadText;
+            font-size: 2.5rem;
+            font-family: 'Open Sans', sans-serif;
+            padding-top: 60px;
+            span {
+                text-transform: uppercase;
+                font-family: 'Carton';
+            }
+        }
+    }
+}
