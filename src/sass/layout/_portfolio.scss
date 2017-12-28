@@ -1,0 +1,142 @@
+$portfolioBackground: #f1f0f0;
+#portfolio {
+    background-color: $portfolioBackground;
+    min-height: 1250px;
+    .row:nth-child(1),
+    .row:nth-child(2) {
+        display: flex;
+        justify-content: center
+    }
+    .line-block {
+        padding-top: 75px;
+    }
+    .head-text {
+        padding-top: 20px;
+        padding-bottom: 90px;
+        h2 {
+            font-family: 'RoadRadio-Thin';
+            font-size: 6rem;
+            color: $headtextColor;
+            text-align: center;
+        }
+    }
+    .top-block {
+        .left-item {
+            background-image: url('../img/portfolio/work-3.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            -ms-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-position: center center;
+            min-height: 400px;
+            h3 {
+                font-family: 'RoadRadio-Thin';
+                color: #fff;
+                font-size: 2.5rem;
+                padding-top: 50px;
+            }
+            h2 {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 3.5rem;
+                color: #fff;
+                margin-top: 0;
+            }
+            p {
+                font-family: 'Open Sans', sans-serif;
+                color: #fff;
+                font-size: 1.8rem;
+            }
+            .view-more-block {
+                display: flex;
+                justify-content: center;
+                .view-more {
+                    font-family: 'RoadRadio-Bold';
+                    background-color: $viewMoreBtnBG;
+                    color: #000;
+                    font-size: 2rem;
+                    padding: 15px 40px 15px 40px;
+                    text-align: center;
+                    margin-top: 15px;
+                    display: inline-block;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .right-item {
+            background-image: url('../img/portfolio/work-1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            -ms-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-position: center center;
+            min-height: 400px;
+        }
+    }
+    .bottom-block {
+        padding-top: 85px;
+        .left-item {
+            background-image: url('../img/portfolio/work-3.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            -ms-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-position: center center;
+            min-height: 400px;
+            margin-top: 85px;
+            h3 {
+                font-family: 'RoadRadio-Thin';
+                color: #fff;
+                font-size: 2.5rem;
+                padding-top: 50px;
+            }
+            h2 {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 3.5rem;
+                color: #fff;
+                margin-top: 0;
+            }
+            p {
+                font-family: 'Open Sans', sans-serif;
+                color: #fff;
+                font-size: 1.8rem;
+            }
+            .view-more-block {
+                display: flex;
+                justify-content: center;
+                .view-more {
+                    font-family: 'RoadRadio-Bold';
+                    background-color: $viewMoreBtnBG;
+                    color: #000;
+                    font-size: 2rem;
+                    padding: 15px 40px 15px 40px;
+                    text-align: center;
+                    margin-top: 15px;
+                    display: inline-block;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .right-item {
+            background-image: url('../img/portfolio/work-2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            -ms-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-position: center center;
+            min-height: 400px;
+            margin-top: 85px;
+        }
+    }
+}

@@ -676,6 +676,124 @@ nav {
       #advantages .view-more-block .view-more:hover {
         text-decoration: none; }
 
+#portfolio {
+  background-color: #f1f0f0;
+  min-height: 1250px; }
+  #portfolio .row:nth-child(1),
+  #portfolio .row:nth-child(2) {
+    display: flex;
+    justify-content: center; }
+  #portfolio .line-block {
+    padding-top: 75px; }
+  #portfolio .head-text {
+    padding-top: 20px;
+    padding-bottom: 90px; }
+    #portfolio .head-text h2 {
+      font-family: 'RoadRadio-Thin';
+      font-size: 6rem;
+      color: #5f5141;
+      text-align: center; }
+  #portfolio .top-block .left-item {
+    background-image: url("../img/portfolio/work-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+    min-height: 400px; }
+    #portfolio .top-block .left-item h3 {
+      font-family: 'RoadRadio-Thin';
+      color: #fff;
+      font-size: 2.5rem;
+      padding-top: 50px; }
+    #portfolio .top-block .left-item h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 3.5rem;
+      color: #fff;
+      margin-top: 0; }
+    #portfolio .top-block .left-item p {
+      font-family: 'Open Sans', sans-serif;
+      color: #fff;
+      font-size: 1.8rem; }
+    #portfolio .top-block .left-item .view-more-block {
+      display: flex;
+      justify-content: center; }
+      #portfolio .top-block .left-item .view-more-block .view-more {
+        font-family: 'RoadRadio-Bold';
+        background-color: #fde24c;
+        color: #000;
+        font-size: 2rem;
+        padding: 15px 40px 15px 40px;
+        text-align: center;
+        margin-top: 15px;
+        display: inline-block; }
+        #portfolio .top-block .left-item .view-more-block .view-more:hover {
+          text-decoration: none; }
+  #portfolio .top-block .right-item {
+    background-image: url("../img/portfolio/work-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+    min-height: 400px; }
+  #portfolio .bottom-block {
+    padding-top: 85px; }
+    #portfolio .bottom-block .left-item {
+      background-image: url("../img/portfolio/work-3.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      -ms-background-size: cover;
+      -o-background-size: cover;
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
+      background-position: center center;
+      min-height: 400px;
+      margin-top: 85px; }
+      #portfolio .bottom-block .left-item h3 {
+        font-family: 'RoadRadio-Thin';
+        color: #fff;
+        font-size: 2.5rem;
+        padding-top: 50px; }
+      #portfolio .bottom-block .left-item h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 3.5rem;
+        color: #fff;
+        margin-top: 0; }
+      #portfolio .bottom-block .left-item p {
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        font-size: 1.8rem; }
+      #portfolio .bottom-block .left-item .view-more-block {
+        display: flex;
+        justify-content: center; }
+        #portfolio .bottom-block .left-item .view-more-block .view-more {
+          font-family: 'RoadRadio-Bold';
+          background-color: #fde24c;
+          color: #000;
+          font-size: 2rem;
+          padding: 15px 40px 15px 40px;
+          text-align: center;
+          margin-top: 15px;
+          display: inline-block; }
+          #portfolio .bottom-block .left-item .view-more-block .view-more:hover {
+            text-decoration: none; }
+    #portfolio .bottom-block .right-item {
+      background-image: url("../img/portfolio/work-2.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      -ms-background-size: cover;
+      -o-background-size: cover;
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
+      background-position: center center;
+      min-height: 400px;
+      margin-top: 85px; }
+
 /*================ 
     Media Query 
    =============*/
