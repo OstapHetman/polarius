@@ -11,7 +11,7 @@ $backroundColor: #5c4c3b;
         padding-top: 20px;
     }
     .head-text {
-        padding-bottom: 90px;
+        padding-bottom: 60px;
         h2 {
             font-family: 'RoadRadio-Thin';
             font-size: 6rem;
@@ -22,53 +22,60 @@ $backroundColor: #5c4c3b;
 }
 
 #partners {
-    .col-centered {
-        float: none;
-        margin: 0 auto;
-    }
-    .carousel-control {
-        width: 8%;
-        width: 0
-    }
-    .carousel-control.left,
-    .carousel-control.right {
-        margin-right: -50px;
-        margin-left: -50px;
-        background-image: none
-    }
-    .carousel-control.left .glyphicon,
-    .carousel-control.right .glyphicon {
-        color: #ededed;
-        font-size: 40px
-    }
-    .carousel-control>a>span {
-        color: #fff;
-        font-size: 29px!important
-    }
-    .item {
-        width: 30%;
-    }
-    .item.active .bt,
-    .item.active .wp {
-        padding-top: 20px
-    }
-    .item .bt,
-    .item .wp {
-        padding-top: 20px
-    }
-    .carousel-col {
-        position: relative;
-        min-height: 1px;
-        padding: 5px;
-        float: left;
-        // img {
-        //     width: 50%;
-        // }
-    }
-    .active>div {
-        display: none
-    }
-    .active>div:first-child {
-        display: block
+    .multi-item-carousel {
+        .carousel-control.right,
+        .carousel-control.left {
+            background-image: unset;
+        }
+        .carousel-control.right {
+            margin-right: -120px
+        }
+        .carousel-control.left {
+            margin-left: -120px
+        }
+        .carousel-control {
+            font-size: 90px;
+            opacity: 0.1;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .carousel-inner {
+            >.item {
+                // transition: 500ms ease-in-out left;
+            }
+            .active {
+                display: flex;
+                align-items: center;
+                &.left {
+                    left: -33%;
+                }
+                &.right {
+                    left: 33%;
+                }
+            }
+            .next {
+                left: 33%;
+            }
+            .prev {
+                left: -33%;
+            }
+            // @media all and (transform-3d),
+            // (-webkit-transform-3d) {
+            //     >.item {
+            //         // use your favourite prefixer here
+            //         transition: 500ms ease-in-out left;
+            //         transition: 500ms ease-in-out all;
+            //         backface-visibility: visible;
+            //         transform: none!important;
+            //     }
+            // }
+        }
+        .carouse-control {
+            &.left,
+            &.right {
+                background-image: none;
+            }
+        }
     }
 }

@@ -3,6 +3,10 @@ $descriptionTextColor: #5f5141;
 $descriptionBackground: #f8f8f8;
 $priceColor: #403704;
 #top-of-month {
+    #myDiv,
+    #myDiv2 {
+        display: none;
+    }
     .row:nth-child(1),
     .row:nth-child(2) {
         display: flex;
@@ -69,9 +73,26 @@ $priceColor: #403704;
                 text-align: center;
                 margin-top: 20px;
                 display: inline-block;
+                border: 0;
                 &:hover {
                     text-decoration: none;
+                    border: 0;
                 }
+                &:focus {
+                    outline: 0
+                }
+            }
+        }
+    }
+    #show-hide {
+        .view-more {
+            margin-top: -60px;
+            margin-bottom: 50px;
+            &:hover {
+                border: 0;
+            }
+            &:focus {
+                outline: 0
             }
         }
     }

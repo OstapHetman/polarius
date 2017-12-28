@@ -445,6 +445,12 @@ nav {
 
 #myCarousel {
   margin-top: -130px; }
+  #myCarousel .carousel-control {
+    font-size: 90px;
+    opacity: 0.1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
   #myCarousel .carousel-indicators li {
     border-color: #eab873; }
     #myCarousel .carousel-indicators li.active {
@@ -458,7 +464,7 @@ nav {
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-position: center center;
-    min-height: 900px; }
+    min-height: 700px; }
     #myCarousel .carousel-inner .item.active {
       background-image: url("../img/header/header-1.jpg");
       background-repeat: no-repeat;
@@ -468,10 +474,10 @@ nav {
       -moz-background-size: cover;
       -webkit-background-size: cover;
       background-position: center center;
-      min-height: 900px; }
+      min-height: 700px; }
   #myCarousel .carousel-caption {
     font-family: 'RoadRadio-Bold';
-    bottom: 245px; }
+    bottom: 150px; }
     #myCarousel .carousel-caption h1 {
       font-size: 6rem;
       text-transform: uppercase; }
@@ -481,7 +487,7 @@ nav {
       font-size: 2rem;
       padding: 15px 40px 15px 40px;
       text-align: center;
-      margin-top: 40px;
+      margin-top: 20px;
       display: inline-block; }
       #myCarousel .carousel-caption .view-more:hover {
         text-decoration: none; }
@@ -561,6 +567,9 @@ nav {
 
 #top-of-month {
   min-height: 1000px; }
+  #top-of-month #myDiv,
+  #top-of-month #myDiv2 {
+    display: none; }
   #top-of-month .row:nth-child(1),
   #top-of-month .row:nth-child(2) {
     display: flex;
@@ -613,9 +622,20 @@ nav {
         padding: 15px 45px 15px 45px;
         text-align: center;
         margin-top: 20px;
-        display: inline-block; }
+        display: inline-block;
+        border: 0; }
         #top-of-month .catalog-items .view-more-block .view-more:hover {
-          text-decoration: none; }
+          text-decoration: none;
+          border: 0; }
+        #top-of-month .catalog-items .view-more-block .view-more:focus {
+          outline: 0; }
+  #top-of-month #show-hide .view-more {
+    margin-top: -60px;
+    margin-bottom: 50px; }
+    #top-of-month #show-hide .view-more:hover {
+      border: 0; }
+    #top-of-month #show-hide .view-more:focus {
+      outline: 0; }
 
 #advantages {
   background-image: url("../img/advantages/background.jpg");
@@ -794,6 +814,23 @@ nav {
       min-height: 400px;
       margin-top: 85px; }
 
+#show-hide .view-more-block {
+  display: flex;
+  justify-content: center; }
+  #show-hide .view-more-block .view-more {
+    font-family: 'RoadRadio-Bold';
+    background-color: #fde24c;
+    color: #000;
+    font-size: 2rem;
+    padding: 15px 40px 15px 40px;
+    text-align: center;
+    margin-top: 15px;
+    display: inline-block;
+    border: 0; }
+    #show-hide .view-more-block .view-more:hover {
+      text-decoration: none;
+      border: 0; }
+
 #partners {
   min-height: 475px;
   background-color: #5c4c3b; }
@@ -804,58 +841,46 @@ nav {
   #partners .line-block {
     padding-top: 20px; }
   #partners .head-text {
-    padding-bottom: 90px; }
+    padding-bottom: 60px; }
     #partners .head-text h2 {
       font-family: 'RoadRadio-Thin';
       font-size: 6rem;
       color: #fff;
       text-align: center; }
 
-#partners .col-centered {
-  float: none;
-  margin: 0 auto; }
+#partners .multi-item-carousel .carousel-control.right,
+#partners .multi-item-carousel .carousel-control.left {
+  background-image: unset; }
 
-#partners .carousel-control {
-  width: 8%;
-  width: 0; }
+#partners .multi-item-carousel .carousel-control.right {
+  margin-right: -120px; }
 
-#partners .carousel-control.left,
-#partners .carousel-control.right {
-  margin-right: -50px;
-  margin-left: -50px;
+#partners .multi-item-carousel .carousel-control.left {
+  margin-left: -120px; }
+
+#partners .multi-item-carousel .carousel-control {
+  font-size: 90px;
+  opacity: 0.1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+#partners .multi-item-carousel .carousel-inner .active {
+  display: flex;
+  align-items: center; }
+  #partners .multi-item-carousel .carousel-inner .active.left {
+    left: -33%; }
+  #partners .multi-item-carousel .carousel-inner .active.right {
+    left: 33%; }
+
+#partners .multi-item-carousel .carousel-inner .next {
+  left: 33%; }
+
+#partners .multi-item-carousel .carousel-inner .prev {
+  left: -33%; }
+
+#partners .multi-item-carousel .carouse-control.left, #partners .multi-item-carousel .carouse-control.right {
   background-image: none; }
-
-#partners .carousel-control.left .glyphicon,
-#partners .carousel-control.right .glyphicon {
-  color: #ededed;
-  font-size: 40px; }
-
-#partners .carousel-control > a > span {
-  color: #fff;
-  font-size: 29px !important; }
-
-#partners .item {
-  width: 30%; }
-
-#partners .item.active .bt,
-#partners .item.active .wp {
-  padding-top: 20px; }
-
-#partners .item .bt,
-#partners .item .wp {
-  padding-top: 20px; }
-
-#partners .carousel-col {
-  position: relative;
-  min-height: 1px;
-  padding: 5px;
-  float: left; }
-
-#partners .active > div {
-  display: none; }
-
-#partners .active > div:first-child {
-  display: block; }
 
 #download {
   min-height: 122px;

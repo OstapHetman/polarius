@@ -1,16 +1,17 @@
-$('.partners .item').each(function() {
-    var next = $(this).next();
-    if (!next.length) {
-        next = $(this).siblings(':first');
+function showHide() {
+    var e = document.getElementById("myDiv");
+    var e2 = document.getElementById("myDiv2");
+    var btn = document.getElementById("show-hide-btn");
+    if (e.style.display === "none") {
+        e.style.display = "flex";
+        btn.style.display = "none";
+    } else {
+        e.style.display = "none";
     }
-    next.children(':first-child').clone().appendTo($(this));
-
-    for (var i = 0; i < 2; i++) {
-        next = next.next();
-        if (!next.length) {
-            next = $(this).siblings(':first');
-        }
-
-        next.children(':first-child').clone().appendTo($(this));
+    if (e2.style.display === "none") {
+        e2.style.display = "flex";
+        btn.style.display = "none";
+    } else {
+        e2.style.display = "none";
     }
-});
+}

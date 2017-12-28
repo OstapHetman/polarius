@@ -2,6 +2,13 @@ $viewMoreBtnBG: #fde24c;
 $carouselIndicators: #eab873;
 #myCarousel {
     margin-top: -130px;
+    .carousel-control {
+        font-size: 90px;
+        opacity: 0.1;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
     .carousel-indicators {
         li {
             &.active {
@@ -21,7 +28,7 @@ $carouselIndicators: #eab873;
                 -moz-background-size: cover;
                 -webkit-background-size: cover;
                 background-position: center center;
-                min-height: 900px;
+                min-height: 700px;
             }
             background-image: url('../img/header/header-1.jpg');
             background-repeat: no-repeat;
@@ -31,12 +38,12 @@ $carouselIndicators: #eab873;
             -moz-background-size: cover;
             -webkit-background-size: cover;
             background-position: center center;
-            min-height: 900px;
+            min-height: 700px;
         }
     }
     .carousel-caption {
         font-family: 'RoadRadio-Bold';
-        bottom: 245px;
+        bottom: 150px;
         h1 {
             font-size: 6rem;
             // font-size: 4.39vw;
@@ -48,7 +55,7 @@ $carouselIndicators: #eab873;
             font-size: 2rem;
             padding: 15px 40px 15px 40px;
             text-align: center;
-            margin-top: 40px;
+            margin-top: 20px;
             display: inline-block;
             &:hover {
                 text-decoration: none;
