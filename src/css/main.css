@@ -617,6 +617,65 @@ nav {
         #top-of-month .catalog-items .view-more-block .view-more:hover {
           text-decoration: none; }
 
+#advantages {
+  background-image: url("../img/advantages/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center center;
+  min-height: 1570px; }
+  #advantages .row:nth-child(1),
+  #advantages .row:nth-child(2) {
+    display: flex;
+    justify-content: center; }
+  #advantages .line-block {
+    padding-top: 75px; }
+  #advantages .head-text {
+    padding-bottom: 90px; }
+    #advantages .head-text h2 {
+      font-family: 'RoadRadio-Thin';
+      font-size: 6rem;
+      color: #fff;
+      text-align: center; }
+  #advantages .text-block {
+    display: flex;
+    align-items: center; }
+    #advantages .text-block.second-text {
+      margin-top: 30px; }
+    #advantages .text-block.third-text {
+      margin-top: 30px; }
+    #advantages .text-block.fourth-text {
+      margin-top: 30px; }
+    #advantages .text-block .number h2 {
+      font-family: 'RoadRadio-Thin';
+      font-size: 17rem;
+      color: #fff; }
+    #advantages .text-block .text {
+      padding-top: 25px;
+      padding-left: 10px; }
+      #advantages .text-block .text p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2.3rem;
+        color: #fff; }
+  #advantages .view-more-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; }
+    #advantages .view-more-block .view-more {
+      font-family: 'RoadRadio-Bold';
+      background-color: #fde24c;
+      color: #000;
+      font-size: 4.2rem;
+      padding: 15px 40px 15px 40px;
+      text-align: center;
+      margin-top: 40px;
+      display: inline-block; }
+      #advantages .view-more-block .view-more:hover {
+        text-decoration: none; }
+
 /*================ 
     Media Query 
    =============*/
