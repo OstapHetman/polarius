@@ -1,0 +1,74 @@
+$backroundColor: #5c4c3b;
+#partners {
+    min-height: 475px;
+    background-color: $backroundColor;
+    .row:nth-child(1),
+    .row:nth-child(2) {
+        display: flex;
+        justify-content: center
+    }
+    .line-block {
+        padding-top: 20px;
+    }
+    .head-text {
+        padding-bottom: 90px;
+        h2 {
+            font-family: 'RoadRadio-Thin';
+            font-size: 6rem;
+            color: #fff;
+            text-align: center;
+        }
+    }
+}
+
+#partners {
+    .col-centered {
+        float: none;
+        margin: 0 auto;
+    }
+    .carousel-control {
+        width: 8%;
+        width: 0
+    }
+    .carousel-control.left,
+    .carousel-control.right {
+        margin-right: -50px;
+        margin-left: -50px;
+        background-image: none
+    }
+    .carousel-control.left .glyphicon,
+    .carousel-control.right .glyphicon {
+        color: #ededed;
+        font-size: 40px
+    }
+    .carousel-control>a>span {
+        color: #fff;
+        font-size: 29px!important
+    }
+    .item {
+        width: 30%;
+    }
+    .item.active .bt,
+    .item.active .wp {
+        padding-top: 20px
+    }
+    .item .bt,
+    .item .wp {
+        padding-top: 20px
+    }
+    .carousel-col {
+        position: relative;
+        min-height: 1px;
+        padding: 5px;
+        float: left;
+        // img {
+        //     width: 50%;
+        // }
+    }
+    .active>div {
+        display: none
+    }
+    .active>div:first-child {
+        display: block
+    }
+}

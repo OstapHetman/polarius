@@ -5,7 +5,8 @@ $underHeaadText: #af9878;
     .head-text {
         h2 {
             color: $headerTextColor;
-            font-size: 12rem;
+            // font-size: 12rem;
+            font-size: 8.97vw;
             text-align: center;
             font-family: 'Open Sans', sans-serif;
             padding-top: 90px;
@@ -16,6 +17,7 @@ $underHeaadText: #af9878;
             text-align: center;
             color: $underHeaadText;
             font-size: 2.5rem;
+            // font-size: 1.9vw;
             font-family: 'Open Sans', sans-serif;
             padding-top: 60px;
             span {

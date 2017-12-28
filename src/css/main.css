@@ -490,7 +490,7 @@ nav {
   min-height: 620px; }
   #make-your-home .head-text h2 {
     color: #6a3f03;
-    font-size: 12rem;
+    font-size: 8.97vw;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     padding-top: 90px; }
@@ -793,6 +793,69 @@ nav {
       background-position: center center;
       min-height: 400px;
       margin-top: 85px; }
+
+#partners {
+  min-height: 475px;
+  background-color: #5c4c3b; }
+  #partners .row:nth-child(1),
+  #partners .row:nth-child(2) {
+    display: flex;
+    justify-content: center; }
+  #partners .line-block {
+    padding-top: 20px; }
+  #partners .head-text {
+    padding-bottom: 90px; }
+    #partners .head-text h2 {
+      font-family: 'RoadRadio-Thin';
+      font-size: 6rem;
+      color: #fff;
+      text-align: center; }
+
+#partners .col-centered {
+  float: none;
+  margin: 0 auto; }
+
+#partners .carousel-control {
+  width: 8%;
+  width: 0; }
+
+#partners .carousel-control.left,
+#partners .carousel-control.right {
+  margin-right: -50px;
+  margin-left: -50px;
+  background-image: none; }
+
+#partners .carousel-control.left .glyphicon,
+#partners .carousel-control.right .glyphicon {
+  color: #ededed;
+  font-size: 40px; }
+
+#partners .carousel-control > a > span {
+  color: #fff;
+  font-size: 29px !important; }
+
+#partners .item {
+  width: 30%; }
+
+#partners .item.active .bt,
+#partners .item.active .wp {
+  padding-top: 20px; }
+
+#partners .item .bt,
+#partners .item .wp {
+  padding-top: 20px; }
+
+#partners .carousel-col {
+  position: relative;
+  min-height: 1px;
+  padding: 5px;
+  float: left; }
+
+#partners .active > div {
+  display: none; }
+
+#partners .active > div:first-child {
+  display: block; }
 
 /*================ 
     Media Query 
