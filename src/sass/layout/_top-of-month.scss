@@ -1,0 +1,78 @@
+$headtextColor: #5f5141;
+$descriptionTextColor: #5f5141;
+$descriptionBackground: #f8f8f8;
+$priceColor: #403704;
+#top-of-month {
+    .row:nth-child(1),
+    .row:nth-child(2) {
+        display: flex;
+        justify-content: center
+    }
+    min-height: 1000px;
+    .line-block {
+        padding-top: 75px;
+    }
+    .head-text {
+        padding-top: 20px;
+        padding-bottom: 90px;
+        h2 {
+            font-family: 'RoadRadio-Thin';
+            font-size: 6rem;
+            color: $headtextColor;
+            text-align: center;
+        }
+    }
+    .catalog-items {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .catalog-item {
+            background-color: $descriptionBackground;
+            padding: 0;
+            margin-bottom: 115px;
+        }
+        img {
+            width: 100%;
+        }
+        .description {
+            padding-left: 15px;
+            h3 {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.46rem;
+                color: #000;
+                font-weight: 600;
+            }
+            p {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.5rem;
+                color: $descriptionTextColor;
+                font-weight: 600;
+            }
+        }
+        .price {
+            h2 {
+                font-family: 'RoadRadio-Bold';
+                font-size: 3.5rem;
+                color: $priceColor;
+                text-align: center;
+            }
+        }
+        .view-more-block {
+            display: flex;
+            justify-content: center;
+            .view-more {
+                font-family: 'RoadRadio-Bold';
+                background-color: $viewMoreBtnBG;
+                color: #000;
+                font-size: 2rem;
+                padding: 15px 45px 15px 45px;
+                text-align: center;
+                margin-top: 20px;
+                display: inline-block;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

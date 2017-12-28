@@ -519,13 +519,15 @@ nav {
     #sale .header-text h2 {
       font-family: 'RoadRadio-Bold';
       color: #fff;
-      font-size: 7rem; }
+      font-size: 7rem;
+      text-align: center; }
   #sale .under-text {
     padding-top: 10px; }
     #sale .under-text h4 {
       font-family: 'RoadRadio-Thin';
       color: #fff;
-      font-size: 3.6rem; }
+      font-size: 3.6rem;
+      text-align: center; }
   #sale .sale-time-block {
     display: flex;
     flex-wrap: wrap;
@@ -556,6 +558,64 @@ nav {
       display: inline-block; }
       #sale .view-more-block .view-more:hover {
         text-decoration: none; }
+
+#top-of-month {
+  min-height: 1000px; }
+  #top-of-month .row:nth-child(1),
+  #top-of-month .row:nth-child(2) {
+    display: flex;
+    justify-content: center; }
+  #top-of-month .line-block {
+    padding-top: 75px; }
+  #top-of-month .head-text {
+    padding-top: 20px;
+    padding-bottom: 90px; }
+    #top-of-month .head-text h2 {
+      font-family: 'RoadRadio-Thin';
+      font-size: 6rem;
+      color: #5f5141;
+      text-align: center; }
+  #top-of-month .catalog-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    #top-of-month .catalog-items .catalog-item {
+      background-color: #f8f8f8;
+      padding: 0;
+      margin-bottom: 115px; }
+    #top-of-month .catalog-items img {
+      width: 100%; }
+    #top-of-month .catalog-items .description {
+      padding-left: 15px; }
+      #top-of-month .catalog-items .description h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.46rem;
+        color: #000;
+        font-weight: 600; }
+      #top-of-month .catalog-items .description p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5rem;
+        color: #5f5141;
+        font-weight: 600; }
+    #top-of-month .catalog-items .price h2 {
+      font-family: 'RoadRadio-Bold';
+      font-size: 3.5rem;
+      color: #403704;
+      text-align: center; }
+    #top-of-month .catalog-items .view-more-block {
+      display: flex;
+      justify-content: center; }
+      #top-of-month .catalog-items .view-more-block .view-more {
+        font-family: 'RoadRadio-Bold';
+        background-color: #fde24c;
+        color: #000;
+        font-size: 2rem;
+        padding: 15px 45px 15px 45px;
+        text-align: center;
+        margin-top: 20px;
+        display: inline-block; }
+        #top-of-month .catalog-items .view-more-block .view-more:hover {
+          text-decoration: none; }
 
 /*================ 
     Media Query 
