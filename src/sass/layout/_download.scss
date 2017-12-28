@@ -1,0 +1,33 @@
+$backgroundColor: #fde24c;
+$textColor: #5f5141;
+$btnBackground: #5e4e3a;
+#download {
+    min-height: 122px;
+    background-color: $backgroundColor;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .text {
+        padding-top: 5px;
+        h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 3.3rem;
+            color: $textColor;
+        }
+    }
+    .button {
+        a {
+            font-family: 'RoadRadio-Bold';
+            font-size: 1.75rem;
+            color: #fff;
+            padding: 15px 40px 15px 40px;
+            background-color: $btnBackground;
+            text-align: center;
+            margin-top: 15px;
+            display: inline-block;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
