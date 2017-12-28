@@ -910,6 +910,26 @@ nav {
     #footer-contact .links .contacts ul li {
       font-weight: 600; }
 
+footer {
+  min-height: 110px;
+  background-color: #f0f0f0; }
+  footer .container {
+    text-align: center; }
+    footer .container .row {
+      display: flex;
+      justify-content: center; }
+  footer .reserved {
+    font-family: 'Open Sans', sans-serif; }
+    footer .reserved h2 {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: #5d5c5b;
+      font-weight: 600; }
+  footer .license {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #5d5c5b; }
+
 /*================ 
     Media Query 
    =============*/

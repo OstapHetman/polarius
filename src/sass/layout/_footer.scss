@@ -1,0 +1,27 @@
+$backgroundColor: #f0f0f0;
+$textColor: #5d5c5b;
+footer {
+    min-height: 110px;
+    background-color: $backgroundColor;
+    .container {
+        text-align: center;
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .reserved {
+        font-family: 'Open Sans', sans-serif;
+        h2 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            color: $textColor;
+            font-weight: 600;
+        }
+    }
+    .license {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5rem;
+        color: $textColor;
+    }
+}
