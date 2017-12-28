@@ -400,6 +400,13 @@ header {
   font-style: normal; }
 
 @font-face {
+  font-family: 'RoadRadio-Thin';
+  src: url("../fonts/RoadRadio/RoadRadio-Thin.eot");
+  src: local("../fonts/RoadRadio/RoadRadio-Thin"), url("../fonts/RoadRadioRoad/Radio-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/RoadRadio/RoadRadio-Thin.woff") format("woff"), url("../fonts/RoadRadio/RoadRadio-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
   font-family: 'Carton';
   src: url("../fonts/Carton/Carton-Slab.otf");
   font-style: normal;
@@ -472,7 +479,7 @@ nav {
       background-color: #fde24c;
       color: #000;
       font-size: 2rem;
-      padding: 20px 40px 20px 40px;
+      padding: 15px 40px 15px 40px;
       text-align: center;
       margin-top: 40px;
       display: inline-block; }
@@ -496,6 +503,59 @@ nav {
     #make-your-home .under-head-text h4 span {
       text-transform: uppercase;
       font-family: 'Carton'; }
+
+#sale {
+  min-height: 610px;
+  background-image: url("../img/sale/sale-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center center; }
+  #sale .header-text {
+    padding-top: 70px; }
+    #sale .header-text h2 {
+      font-family: 'RoadRadio-Bold';
+      color: #fff;
+      font-size: 7rem; }
+  #sale .under-text {
+    padding-top: 10px; }
+    #sale .under-text h4 {
+      font-family: 'RoadRadio-Thin';
+      color: #fff;
+      font-size: 3.6rem; }
+  #sale .sale-time-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px; }
+    #sale .sale-time-block .time-item {
+      text-align: center; }
+      #sale .sale-time-block .time-item h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 9rem;
+        color: white; }
+      #sale .sale-time-block .time-item p {
+        font-family: 'RoadRadio-Thin';
+        color: #fff;
+        font-size: 2.5rem;
+        padding-left: 10px; }
+  #sale .view-more-block {
+    display: flex;
+    justify-content: center; }
+    #sale .view-more-block .view-more {
+      font-family: 'RoadRadio-Bold';
+      background-color: #fde24c;
+      color: #000;
+      font-size: 2rem;
+      padding: 15px 40px 15px 40px;
+      text-align: center;
+      margin-top: 40px;
+      display: inline-block; }
+      #sale .view-more-block .view-more:hover {
+        text-decoration: none; }
 
 /*================ 
     Media Query 

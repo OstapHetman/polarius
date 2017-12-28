@@ -1,0 +1,65 @@
+$viewMoreBtnBG: #fde24c;
+#sale {
+    min-height: 610px;
+    background-image: url('../img/sale/sale-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+    .header-text {
+        padding-top: 70px;
+        h2 {
+            font-family: 'RoadRadio-Bold';
+            color: #fff;
+            font-size: 7rem;
+        }
+    }
+    .under-text {
+        padding-top: 10px;
+        h4 {
+            font-family: 'RoadRadio-Thin';
+            color: #fff;
+            font-size: 3.6rem;
+        }
+    }
+    .sale-time-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 30px;
+        .time-item {
+            text-align: center;
+            h2 {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 9rem;
+                color: white;
+            }
+            p {
+                font-family: 'RoadRadio-Thin';
+                color: #fff;
+                font-size: 2.5rem;
+                padding-left: 10px;
+            }
+        }
+    }
+    .view-more-block {
+        display: flex;
+        justify-content: center;
+        .view-more {
+            font-family: 'RoadRadio-Bold';
+            background-color: $viewMoreBtnBG;
+            color: #000;
+            font-size: 2rem;
+            padding: 15px 40px 15px 40px;
+            text-align: center;
+            margin-top: 40px;
+            display: inline-block;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
