@@ -570,7 +570,7 @@ nav {
       padding-top: 30px; } }
 
 #sale {
-  min-height: 565px;
+  min-height: 540px;
   background-image: url("../img/sale/sale-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -590,14 +590,13 @@ nav {
     padding-top: 10px; }
     #sale .under-text h4 {
       font-family: 'RoadRadio-Thin';
-      color: #fff;
+      color: #e3e1e1;
       font-size: 3.2rem;
       text-align: center; }
   #sale .sale-time-block {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 30px; }
+    justify-content: space-between; }
     #sale .sale-time-block .line:before {
       content: " ";
       position: absolute;

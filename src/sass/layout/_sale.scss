@@ -1,6 +1,7 @@
 $viewMoreBtnBG: #fde24c;
+$underTextColor: #e3e1e1;
 #sale {
-    min-height: 565px;
+    min-height: 540px;
     background-image: url('../img/sale/sale-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,7 +24,7 @@ $viewMoreBtnBG: #fde24c;
         padding-top: 10px;
         h4 {
             font-family: 'RoadRadio-Thin';
-            color: #fff;
+            color: $underTextColor;
             font-size: 3.2rem;
             text-align: center;
         }
@@ -32,7 +33,7 @@ $viewMoreBtnBG: #fde24c;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-top: 30px;
+        // padding-top: 30px;
         .line:before {
             content: " ";
             position: absolute;
