@@ -73,3 +73,48 @@
         }
     }
 }
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    #advantages {
+        min-height: 1100px;
+        .head-text {
+            padding-bottom: 0px;
+            h2 {
+                font-size: 4rem;
+            }
+        }
+        .text-block {
+            .number h2 {
+                font-size: 6rem;
+            }
+            .text p {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #advantages {
+        min-height: 100px;
+        .head-text {
+            padding-bottom: 0px;
+            h2 {
+                font-size: 3rem;
+            }
+        }
+        .text-block {
+            .number h2 {
+                font-size: 5.5rem;
+            }
+            .text p {
+                font-size: 1.4rem;
+            }
+        }
+        .view-more-block .view-more {
+            font-size: 2rem;
+            margin-top: 0px;
+            margin-bottom: 40px;
+        }
+    }
+}

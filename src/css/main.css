@@ -415,12 +415,14 @@ header {
 nav {
   padding-top: 50px;
   z-index: 999; }
+  nav .navbar-toggle .icon-bar {
+    background-color: #fde24c; }
   nav .navbar-brand {
     margin-top: -30px; }
   nav #navbar {
     font-family: 'Open Sans', sans-serif; }
     nav #navbar .left-navbar li {
-      font-size: 1.8rem; }
+      font-size: 1.6rem; }
       nav #navbar .left-navbar li:hover {
         background-color: none; }
       nav #navbar .left-navbar li a {
@@ -434,17 +436,39 @@ nav {
         font-size: 2.2rem;
         text-align: center;
         padding-bottom: 10px;
-        color: white; }
+        color: #e5e2e2; }
       nav #navbar .navbar-right .right-phone .get-call {
         font-size: 1.9rem;
         background-color: #4c3823;
         color: #fff;
-        padding: 10px;
+        padding: 4px 10px 4px 10px;
         text-align: center;
         text-decoration: none; }
 
+#test-nav {
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #test-nav .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px; }
+    #test-nav .logo img {
+      max-width: 180px;
+      height: auto; }
+  #test-nav .burger {
+    font-size: 40px;
+    position: relative;
+    left: 35%; }
+    #test-nav .burger i {
+      color: #fde24c; }
+
 #myCarousel {
-  margin-top: -130px; }
+  margin-top: 0; }
   #myCarousel .carousel-control {
     font-size: 90px;
     opacity: 0.1;
@@ -464,7 +488,7 @@ nav {
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-position: center center;
-    min-height: 700px; }
+    min-height: 900px; }
     #myCarousel .carousel-inner .item.active {
       background-image: url("../img/header/header-1.jpg");
       background-repeat: no-repeat;
@@ -474,16 +498,16 @@ nav {
       -moz-background-size: cover;
       -webkit-background-size: cover;
       background-position: center center;
-      min-height: 700px; }
+      min-height: 900px; }
   #myCarousel .carousel-caption {
     font-family: 'RoadRadio-Bold';
-    bottom: 150px; }
+    bottom: 260px; }
     #myCarousel .carousel-caption h1 {
       font-size: 6rem;
       text-transform: uppercase; }
     #myCarousel .carousel-caption .view-more {
       background-color: #fde24c;
-      color: #000;
+      color: #302e28;
       font-size: 2rem;
       padding: 15px 40px 15px 40px;
       text-align: center;
@@ -510,6 +534,19 @@ nav {
       text-transform: uppercase;
       font-family: 'Carton'; }
 
+@media screen and (max-width: 768px) {
+  #make-your-home {
+    min-height: 345px; }
+    #make-your-home .head-text h2 {
+      padding-top: 0px; } }
+
+@media screen and (max-width: 480px) {
+  #make-your-home {
+    min-height: 270px; }
+    #make-your-home .under-head-text h4 {
+      font-size: 2rem;
+      padding-top: 30px; } }
+
 #sale {
   min-height: 610px;
   background-image: url("../img/sale/sale-bg.jpg");
@@ -525,20 +562,28 @@ nav {
     #sale .header-text h2 {
       font-family: 'RoadRadio-Bold';
       color: #fff;
-      font-size: 7rem;
+      font-size: 5vw;
       text-align: center; }
   #sale .under-text {
     padding-top: 10px; }
     #sale .under-text h4 {
       font-family: 'RoadRadio-Thin';
       color: #fff;
-      font-size: 3.6rem;
+      font-size: 3.2rem;
       text-align: center; }
   #sale .sale-time-block {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 30px; }
+    #sale .sale-time-block .line:before {
+      content: " ";
+      position: absolute;
+      top: 38px;
+      left: -30px;
+      bottom: 63px;
+      border-left: 2px solid #fff;
+      opacity: 0.1; }
     #sale .sale-time-block .time-item {
       text-align: center; }
       #sale .sale-time-block .time-item h2 {
@@ -565,9 +610,30 @@ nav {
       #sale .view-more-block .view-more:hover {
         text-decoration: none; }
 
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  #sale .under-text h4 {
+    font-size: 3rem; }
+  #sale .sale-time-block .time-item p {
+    font-size: 1.8rem; }
+  #sale .sale-time-block .time-item h2 {
+    font-size: 5rem; } }
+
+@media screen and (max-width: 480px) {
+  #sale {
+    min-height: 470px; }
+    #sale .header-text {
+      padding-top: 0px; }
+    #sale .under-text h4 {
+      font-size: 2.5rem; }
+    #sale .sale-time-block .time-item p {
+      font-size: 1rem; }
+    #sale .sale-time-block .time-item h2 {
+      font-size: 3rem; }
+    #sale .view-more-block .view-more {
+      font-size: 1.4rem; } }
+
 #top-of-month {
   min-height: 1000px; }
-  #top-of-month #myDiv,
   #top-of-month #myDiv2 {
     display: none; }
   #top-of-month .row:nth-child(1),
@@ -584,6 +650,8 @@ nav {
       font-size: 6rem;
       color: #5f5141;
       text-align: center; }
+  #top-of-month .category-group .catalog-item {
+    margin-bottom: 35px !important; }
   #top-of-month .catalog-items {
     display: flex;
     justify-content: space-around;
@@ -594,6 +662,12 @@ nav {
       margin-bottom: 115px; }
     #top-of-month .catalog-items img {
       width: 100%; }
+    #top-of-month .catalog-items .category h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2.75rem;
+      color: #9a7d56;
+      text-align: center;
+      margin-top: 10px; }
     #top-of-month .catalog-items .description {
       padding-left: 15px; }
       #top-of-month .catalog-items .description h3 {
@@ -629,6 +703,9 @@ nav {
           border: 0; }
         #top-of-month .catalog-items .view-more-block .view-more:focus {
           outline: 0; }
+  #top-of-month #show-hide .view-more-block {
+    margin-top: 30px;
+    margin-bottom: 30px; }
   #top-of-month #show-hide .view-more {
     margin-top: -60px;
     margin-bottom: 50px; }
@@ -636,6 +713,14 @@ nav {
       border: 0; }
     #top-of-month #show-hide .view-more:focus {
       outline: 0; }
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  #top-of-month .head-text h2 {
+    font-size: 4rem; } }
+
+@media screen and (max-width: 480px) {
+  #top-of-month .head-text h2 {
+    font-size: 3rem; } }
 
 #advantages {
   background-image: url("../img/advantages/background.jpg");
@@ -696,9 +781,37 @@ nav {
       #advantages .view-more-block .view-more:hover {
         text-decoration: none; }
 
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  #advantages {
+    min-height: 1100px; }
+    #advantages .head-text {
+      padding-bottom: 0px; }
+      #advantages .head-text h2 {
+        font-size: 4rem; }
+    #advantages .text-block .number h2 {
+      font-size: 6rem; }
+    #advantages .text-block .text p {
+      font-size: 2rem; } }
+
+@media screen and (max-width: 480px) {
+  #advantages {
+    min-height: 100px; }
+    #advantages .head-text {
+      padding-bottom: 0px; }
+      #advantages .head-text h2 {
+        font-size: 3rem; }
+    #advantages .text-block .number h2 {
+      font-size: 5.5rem; }
+    #advantages .text-block .text p {
+      font-size: 1.4rem; }
+    #advantages .view-more-block .view-more {
+      font-size: 2rem;
+      margin-top: 0px;
+      margin-bottom: 40px; } }
+
 #portfolio {
   background-color: #f1f0f0;
-  min-height: 1250px; }
+  min-height: 1325px; }
   #portfolio .row:nth-child(1),
   #portfolio .row:nth-child(2) {
     display: flex;
@@ -832,8 +945,8 @@ nav {
       border: 0; }
 
 #partners {
-  min-height: 475px;
-  background-color: #5c4c3b; }
+  min-height: 325px;
+  background-color: #d0a875; }
   #partners .row:nth-child(1),
   #partners .row:nth-child(2) {
     display: flex;
@@ -841,6 +954,7 @@ nav {
   #partners .line-block {
     padding-top: 20px; }
   #partners .head-text {
+    padding-top: 20px;
     padding-bottom: 60px; }
     #partners .head-text h2 {
       font-family: 'RoadRadio-Thin';
@@ -848,12 +962,20 @@ nav {
       color: #fff;
       text-align: center; }
 
+#partners .multi-item-carousel .item.active .logoG,
+#partners .multi-item-carousel .item.active .smi {
+  padding-top: 20px; }
+
+#partners .multi-item-carousel .item .logoG,
+#partners .multi-item-carousel .item .smi {
+  padding-top: 20px; }
+
 #partners .multi-item-carousel .carousel-control.right,
 #partners .multi-item-carousel .carousel-control.left {
   background-image: unset; }
 
 #partners .multi-item-carousel .carousel-control.right {
-  margin-right: -120px; }
+  margin-right: -100px; }
 
 #partners .multi-item-carousel .carousel-control.left {
   margin-left: -120px; }
@@ -865,19 +987,16 @@ nav {
   align-items: center;
   justify-content: space-around; }
 
-#partners .multi-item-carousel .carousel-inner .active {
-  display: flex;
-  align-items: center; }
+#partners .multi-item-carousel .carousel-inner {
+  top: -10px !important; }
   #partners .multi-item-carousel .carousel-inner .active.left {
     left: -33%; }
   #partners .multi-item-carousel .carousel-inner .active.right {
     left: 33%; }
-
-#partners .multi-item-carousel .carousel-inner .next {
-  left: 33%; }
-
-#partners .multi-item-carousel .carousel-inner .prev {
-  left: -33%; }
+  #partners .multi-item-carousel .carousel-inner .next {
+    left: 33%; }
+  #partners .multi-item-carousel .carousel-inner .prev {
+    left: -33%; }
 
 #partners .multi-item-carousel .carouse-control.left, #partners .multi-item-carousel .carouse-control.right {
   background-image: none; }
@@ -893,7 +1012,8 @@ nav {
     #download .text h2 {
       font-family: 'Open Sans', sans-serif;
       font-size: 3.3rem;
-      color: #5f5141; }
+      color: #5f5141;
+      margin-top: 10px; }
   #download .button a {
     font-family: 'RoadRadio-Bold';
     font-size: 1.75rem;
@@ -901,20 +1021,19 @@ nav {
     padding: 15px 40px 15px 40px;
     background-color: #5e4e3a;
     text-align: center;
-    margin-top: 15px;
-    display: inline-block; }
+    display: inline-block;
+    margin-top: 5px; }
     #download .button a:hover {
       text-decoration: none; }
 
 #footer-contact {
-  min-height: 345px; }
+  min-height: 270px; }
   #footer-contact .links {
     padding-top: 50px;
-    padding-bottom: 50px;
     display: flex;
     justify-content: center; }
     #footer-contact .links h1 {
-      font-size: 2.5rem;
+      font-size: 2.3rem;
       color: #5f5141; }
     #footer-contact .links ul {
       padding-left: 0; }
@@ -922,18 +1041,16 @@ nav {
         list-style: none;
         text-decoration: none;
         font-family: 'Open Sans', sans-serif;
-        font-size: 2rem;
+        font-size: 1.4rem;
         color: #5d5c5b;
         line-height: 1.6; }
         #footer-contact .links ul li a {
           font-family: 'Open Sans', sans-serif;
-          font-size: 2rem;
+          font-size: 1.4rem;
           color: #5d5c5b;
           line-height: 1.6; }
           #footer-contact .links ul li a:hover {
             text-decoration: underline; }
-    #footer-contact .links .contacts ul li {
-      font-weight: 600; }
 
 footer {
   min-height: 110px;

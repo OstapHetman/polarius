@@ -1,6 +1,7 @@
-$backroundColor: #5c4c3b;
+// $backroundColor: #5c4c3b;
+$backroundColor: #d0a875;
 #partners {
-    min-height: 475px;
+    min-height: 325px;
     background-color: $backroundColor;
     .row:nth-child(1),
     .row:nth-child(2) {
@@ -11,6 +12,7 @@ $backroundColor: #5c4c3b;
         padding-top: 20px;
     }
     .head-text {
+        padding-top: 20px;
         padding-bottom: 60px;
         h2 {
             font-family: 'RoadRadio-Thin';
@@ -23,12 +25,20 @@ $backroundColor: #5c4c3b;
 
 #partners {
     .multi-item-carousel {
+        .item.active .logoG,
+        .item.active .smi {
+            padding-top: 20px;
+        }
+        .item .logoG,
+        .item .smi {
+            padding-top: 20px;
+        }
         .carousel-control.right,
         .carousel-control.left {
             background-image: unset;
         }
         .carousel-control.right {
-            margin-right: -120px
+            margin-right: -100px
         }
         .carousel-control.left {
             margin-left: -120px
@@ -41,12 +51,13 @@ $backroundColor: #5c4c3b;
             justify-content: space-around;
         }
         .carousel-inner {
+            top: -10px !important;
             >.item {
                 // transition: 500ms ease-in-out left;
             }
             .active {
-                display: flex;
-                align-items: center;
+                // display: flex;
+                // align-items: center;
                 &.left {
                     left: -33%;
                 }

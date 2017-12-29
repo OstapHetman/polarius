@@ -3,7 +3,6 @@ $descriptionTextColor: #5f5141;
 $descriptionBackground: #f8f8f8;
 $priceColor: #403704;
 #top-of-month {
-    #myDiv,
     #myDiv2 {
         display: none;
     }
@@ -26,6 +25,11 @@ $priceColor: #403704;
             text-align: center;
         }
     }
+    .category-group {
+        .catalog-item {
+            margin-bottom: 35px !important;
+        }
+    }
     .catalog-items {
         display: flex;
         justify-content: space-around;
@@ -37,6 +41,15 @@ $priceColor: #403704;
         }
         img {
             width: 100%;
+        }
+        .category {
+            h2 {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 2.75rem;
+                color: #9a7d56;
+                text-align: center;
+                margin-top: 10px;
+            }
         }
         .description {
             padding-left: 15px;
@@ -85,6 +98,10 @@ $priceColor: #403704;
         }
     }
     #show-hide {
+        .view-more-block {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
         .view-more {
             margin-top: -60px;
             margin-bottom: 50px;
@@ -94,6 +111,22 @@ $priceColor: #403704;
             &:focus {
                 outline: 0
             }
+        }
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    #top-of-month {
+        .head-text h2 {
+            font-size: 4rem;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #top-of-month {
+        .head-text h2 {
+            font-size: 3rem;
         }
     }
 }

@@ -13,6 +13,7 @@ $btnBackground: #5e4e3a;
             font-family: 'Open Sans', sans-serif;
             font-size: 3.3rem;
             color: $textColor;
+            margin-top: 10px;
         }
     }
     .button {
@@ -23,8 +24,8 @@ $btnBackground: #5e4e3a;
             padding: 15px 40px 15px 40px;
             background-color: $btnBackground;
             text-align: center;
-            margin-top: 15px;
             display: inline-block;
+            margin-top: 5px;
             &:hover {
                 text-decoration: none;
             }

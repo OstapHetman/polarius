@@ -14,7 +14,8 @@ $viewMoreBtnBG: #fde24c;
         h2 {
             font-family: 'RoadRadio-Bold';
             color: #fff;
-            font-size: 7rem;
+            // font-size: 7rem;
+            font-size: 5vw;
             text-align: center;
         }
     }
@@ -23,7 +24,7 @@ $viewMoreBtnBG: #fde24c;
         h4 {
             font-family: 'RoadRadio-Thin';
             color: #fff;
-            font-size: 3.6rem;
+            font-size: 3.2rem;
             text-align: center;
         }
     }
@@ -32,6 +33,15 @@ $viewMoreBtnBG: #fde24c;
         flex-wrap: wrap;
         justify-content: space-between;
         padding-top: 30px;
+        .line:before {
+            content: " ";
+            position: absolute;
+            top: 38px;
+            left: -30px;
+            bottom: 63px;
+            border-left: 2px solid #fff;
+            opacity: 0.1;
+        }
         .time-item {
             text-align: center;
             h2 {
@@ -62,6 +72,45 @@ $viewMoreBtnBG: #fde24c;
             &:hover {
                 text-decoration: none;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    #sale {
+        .under-text h4 {
+            font-size: 3rem;
+        }
+        .sale-time-block .time-item {
+            p {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #sale {
+        min-height: 470px;
+        .header-text {
+            padding-top: 0px;
+        }
+        .under-text h4 {
+            font-size: 2.5rem;
+        }
+        .sale-time-block .time-item {
+            p {
+                font-size: 1rem;
+            }
+            h2 {
+                font-size: 3rem;
+            }
+        }
+        .view-more-block .view-more {
+            font-size: 1.4rem;
         }
     }
 }

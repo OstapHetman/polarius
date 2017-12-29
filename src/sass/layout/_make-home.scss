@@ -27,3 +27,26 @@ $underHeaadText: #af9878;
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    #make-your-home {
+        min-height: 345px;
+        .head-text {
+            h2 {
+                padding-top: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #make-your-home {
+        min-height: 270px;
+        .under-head-text {
+            h4 {
+                font-size: 2rem;
+                padding-top: 30px;
+            }
+        }
+    }
+}

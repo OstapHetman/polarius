@@ -1,14 +1,13 @@
 $headerColor: #5f5141;
 $linksColor: #5d5c5b;
 #footer-contact {
-    min-height: 345px;
+    min-height: 270px;
     .links {
         padding-top: 50px;
-        padding-bottom: 50px;
         display: flex;
         justify-content: center;
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             color: $headerColor;
         }
         ul {
@@ -17,23 +16,18 @@ $linksColor: #5d5c5b;
                 list-style: none;
                 text-decoration: none;
                 font-family: 'Open Sans', sans-serif;
-                font-size: 2rem;
+                font-size: 1.4rem;
                 color: $linksColor;
                 line-height: 1.6;
                 a {
                     font-family: 'Open Sans', sans-serif;
-                    font-size: 2rem;
+                    font-size: 1.4rem;
                     color: $linksColor;
                     line-height: 1.6;
                     &:hover {
                         text-decoration: underline;
                     }
                 }
-            }
-        }
-        .contacts {
-            ul li {
-                font-weight: 600;
             }
         }
     }
