@@ -1225,6 +1225,78 @@ footer {
       #goods header .carousel-caption .view-more:hover {
         text-decoration: none; }
 
+#blog header {
+  background-image: url("../img/header/header-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center center;
+  min-height: 900px; }
+  #blog header .carousel-caption {
+    font-family: 'RoadRadio-Bold';
+    right: 8%;
+    left: 8%;
+    bottom: -60px; }
+    #blog header .carousel-caption h1.blog {
+      font-size: 6rem;
+      text-transform: uppercase;
+      margin-bottom: 0; }
+    #blog header .carousel-caption h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2.6rem;
+      padding-top: 10px;
+      margin-top: 0; }
+    #blog header .carousel-caption .view-more {
+      font-family: 'RoadRadio-Bold';
+      background-color: #fde24c;
+      color: #000;
+      font-size: 2rem;
+      padding: 15px 40px 15px 40px;
+      text-align: center;
+      margin-top: 80px;
+      display: inline-block;
+      text-shadow: none; }
+      #blog header .carousel-caption .view-more:hover {
+        text-decoration: none; }
+
+#blog #portfolio {
+  background-color: white; }
+  #blog #portfolio .head-text {
+    padding-bottom: 10px; }
+  #blog #portfolio .under-blog-text {
+    margin-bottom: 100px; }
+    #blog #portfolio .under-blog-text p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2.6rem;
+      color: #8a8787;
+      text-align: center; }
+  #blog #portfolio .second-top-block .left-item,
+  #blog #portfolio .second-top-block .right-item {
+    margin-top: 85px; }
+  #blog #portfolio .third-top-block .left-item,
+  #blog #portfolio .third-top-block .right-item {
+    margin-top: 85px;
+    margin-bottom: 85px; }
+  #blog #portfolio .top-block .left-item {
+    min-height: 420px; }
+    #blog #portfolio .top-block .left-item h3 {
+      font-size: 2rem;
+      padding-top: 30px;
+      margin-bottom: 20px; }
+  #blog #portfolio .top-block .right-item {
+    min-height: 420px; }
+  #blog #portfolio .bottom-block .right-item {
+    min-height: 420px; }
+  #blog #portfolio .bottom-block .left-item {
+    min-height: 420px; }
+    #blog #portfolio .bottom-block .left-item h3 {
+      font-size: 2rem;
+      padding-top: 30px;
+      margin-bottom: 20px; }
+
 /*================ 
     Media Query 
    =============*/
