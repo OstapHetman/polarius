@@ -1207,8 +1207,7 @@ footer {
     bottom: -145px; }
     #goods header .carousel-caption h1 {
       font-size: 6rem;
-      text-transform: uppercase;
-      line-height: 1.4; }
+      text-transform: uppercase; }
     #goods header .carousel-caption h2 {
       font-family: 'Open Sans', sans-serif;
       font-size: 2.6rem;
