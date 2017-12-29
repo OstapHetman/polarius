@@ -500,8 +500,7 @@ nav {
       background-position: center center;
       min-height: 900px; }
   #myCarousel .carousel-caption {
-    font-family: 'RoadRadio-Bold';
-    bottom: 260px; }
+    font-family: 'RoadRadio-Bold'; }
     #myCarousel .carousel-caption.third-caption h1 {
       font-size: 4rem; }
     #myCarousel .carousel-caption h1 {
@@ -859,7 +858,7 @@ nav {
     min-height: 400px; }
     #portfolio .top-block .left-item h3 {
       font-family: 'RoadRadio-Thin';
-      color: #fff;
+      color: #e6e5e3;
       font-size: 2.5rem;
       padding-top: 50px; }
     #portfolio .top-block .left-item h2 {
@@ -869,7 +868,7 @@ nav {
       margin-top: 0; }
     #portfolio .top-block .left-item p {
       font-family: 'Open Sans', sans-serif;
-      color: #fff;
+      color: #e6e5e3;
       font-size: 1.8rem; }
     #portfolio .top-block .left-item .view-more-block {
       display: flex;
@@ -910,7 +909,7 @@ nav {
       margin-top: 85px; }
       #portfolio .bottom-block .left-item h3 {
         font-family: 'RoadRadio-Thin';
-        color: #fff;
+        color: #e6e5e3;
         font-size: 2.5rem;
         padding-top: 50px; }
       #portfolio .bottom-block .left-item h2 {
@@ -920,7 +919,7 @@ nav {
         margin-top: 0; }
       #portfolio .bottom-block .left-item p {
         font-family: 'Open Sans', sans-serif;
-        color: #fff;
+        color: #e6e5e3;
         font-size: 1.8rem; }
       #portfolio .bottom-block .left-item .view-more-block {
         display: flex;
@@ -976,7 +975,7 @@ nav {
 
 #partners {
   min-height: 325px;
-  background-color: #d0a875; }
+  background-color: #5c4c3b; }
   #partners .row:nth-child(1),
   #partners .row:nth-child(2) {
     display: flex;
@@ -1053,7 +1052,7 @@ nav {
     padding-top: 5px; }
     #download .text h2 {
       font-family: 'Open Sans', sans-serif;
-      font-size: 3.3rem;
+      font-size: 2.9rem;
       color: #5f5141;
       margin-top: 10px; }
   #download .button a {
@@ -1132,6 +1131,59 @@ footer {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
     color: #5d5c5b; }
+
+#goods #top-of-month .catalog-items {
+  justify-content: space-between; }
+  #goods #top-of-month .catalog-items .catalog-item {
+    border: 1px red solid;
+    max-width: 243px; }
+  #goods #top-of-month .catalog-items .price h2 {
+    font-size: 2.6rem; }
+  #goods #top-of-month .catalog-items .description {
+    padding-left: 0px;
+    text-align: center; }
+    #goods #top-of-month .catalog-items .description h3 {
+      font-size: 1.7rem; }
+  #goods #top-of-month .catalog-items .view-more-block {
+    display: block; }
+    #goods #top-of-month .catalog-items .view-more-block .view-more {
+      display: block; }
+
+header {
+  background-image: url("../img/header/header-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center center;
+  min-height: 900px; }
+  header .carousel-caption {
+    font-family: 'RoadRadio-Bold';
+    right: 8%;
+    left: 8%;
+    bottom: -145px; }
+    header .carousel-caption h1 {
+      font-size: 6rem;
+      text-transform: uppercase;
+      line-height: 1.4; }
+    header .carousel-caption h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2.6rem;
+      padding-top: 10px; }
+    header .carousel-caption .view-more {
+      font-family: 'RoadRadio-Bold';
+      background-color: #fde24c;
+      color: #000;
+      font-size: 2rem;
+      padding: 15px 40px 15px 40px;
+      text-align: center;
+      margin-top: 80px;
+      display: inline-block;
+      text-shadow: none; }
+      header .carousel-caption .view-more:hover {
+        text-decoration: none; }
 
 /*================ 
     Media Query 

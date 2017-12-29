@@ -1,0 +1,28 @@
+#goods {
+    #top-of-month {
+        .catalog-items {
+            justify-content: space-between;
+            .catalog-item {
+                // padding: 0px 24px 0px 24px;
+                border: 1px red solid;
+                max-width: 243px;
+            }
+            .price h2 {
+                font-size: 2.6rem;
+            }
+            .description {
+                padding-left: 0px;
+                text-align: center;
+                h3 {
+                    font-size: 1.7rem;
+                }
+            }
+            .view-more-block {
+                display: block;
+                .view-more {
+                    display: block;
+                }
+            }
+        }
+    }
+}
