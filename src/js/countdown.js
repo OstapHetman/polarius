@@ -16,6 +16,10 @@ let x = setInterval(function() {
     document.getElementsByClassName("hours")[0].innerHTML = hours;
     document.getElementsByClassName("minutes")[0].innerHTML = minutes;
     document.getElementsByClassName("seconds")[0].innerHTML = seconds;
+    document.getElementsByClassName("days")[1].innerHTML = '0' + days;
+    document.getElementsByClassName("hours")[1].innerHTML = hours;
+    document.getElementsByClassName("minutes")[1].innerHTML = minutes;
+    document.getElementsByClassName("seconds")[1].innerHTML = seconds;
     // If the count down is finished, write some text 
     if (distance < 0) {
         clearInterval(x);

@@ -1204,7 +1204,7 @@ footer {
     font-family: 'RoadRadio-Bold';
     right: 8%;
     left: 8%;
-    bottom: -145px; }
+    bottom: 0; }
     #goods header .carousel-caption h1 {
       font-size: 6rem;
       text-transform: uppercase; }
@@ -1239,7 +1239,7 @@ footer {
     font-family: 'RoadRadio-Bold';
     right: 8%;
     left: 8%;
-    bottom: -60px; }
+    bottom: 40px; }
     #blog header .carousel-caption h1.blog {
       font-size: 6rem;
       text-transform: uppercase;
@@ -1248,7 +1248,8 @@ footer {
       font-family: 'Open Sans', sans-serif;
       font-size: 2.6rem;
       padding-top: 10px;
-      margin-top: 0; }
+      margin-top: 0;
+      color: #e3e1e1; }
     #blog header .carousel-caption .view-more {
       font-family: 'RoadRadio-Bold';
       background-color: #fde24c;
@@ -1267,7 +1268,8 @@ footer {
   #blog #portfolio .head-text {
     padding-bottom: 10px; }
   #blog #portfolio .under-blog-text {
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    margin-top: 25px; }
     #blog #portfolio .under-blog-text p {
       font-family: 'Open Sans', sans-serif;
       font-size: 2.6rem;
@@ -1296,6 +1298,88 @@ footer {
       font-size: 2rem;
       padding-top: 30px;
       margin-bottom: 20px; }
+
+#sale-page header {
+  background-image: url("../img/sale/sale-bg-cr.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center center;
+  min-height: 900px; }
+  #sale-page header #sale {
+    background-image: unset;
+    min-height: unset; }
+  #sale-page header .carousel-caption {
+    font-family: 'RoadRadio-Bold';
+    right: 8%;
+    left: 8%;
+    margin-top: 20%;
+    position: static; }
+    #sale-page header .carousel-caption h1 {
+      font-size: 6rem;
+      text-transform: uppercase; }
+    #sale-page header .carousel-caption h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2.6rem;
+      padding-top: 10px; }
+    #sale-page header .carousel-caption .view-more {
+      font-family: 'RoadRadio-Bold';
+      background-color: #fde24c;
+      color: #000;
+      font-size: 2rem;
+      padding: 15px 40px 15px 40px;
+      text-align: center;
+      margin-top: 80px;
+      display: inline-block;
+      text-shadow: none; }
+      #sale-page header .carousel-caption .view-more:hover {
+        text-decoration: none; }
+
+#sale-page #sale {
+  background-image: url("../img/sale/sale-bg-cr.jpg"); }
+
+#sale-page #top-of-month .line-block {
+  padding-left: 0;
+  padding-right: 0; }
+
+#sale-page #top-of-month .catalog-items {
+  justify-content: space-between; }
+  #sale-page #top-of-month .catalog-items .catalog-item {
+    max-width: 243px; }
+  #sale-page #top-of-month .catalog-items .price h2 {
+    font-size: 2.3rem;
+    color: #fd0808; }
+    #sale-page #top-of-month .catalog-items .price h2 strike {
+      color: #9d9d9b;
+      font-size: 1.7rem;
+      padding-right: 10px; }
+  #sale-page #top-of-month .catalog-items .description {
+    padding-left: 0px;
+    text-align: center; }
+    #sale-page #top-of-month .catalog-items .description h3 {
+      font-size: 1.7rem; }
+  #sale-page #top-of-month .catalog-items .view-more-block {
+    display: block; }
+    #sale-page #top-of-month .catalog-items .view-more-block .view-more {
+      display: block; }
+
+#sale-page #show-hide .view-more-block {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+#sale-page #show-hide .view-more {
+  margin-top: -60px;
+  margin-bottom: 50px;
+  background-color: #e9e9e9;
+  text-decoration: underline; }
+  #sale-page #show-hide .view-more:hover {
+    border: 0;
+    cursor: pointer; }
+  #sale-page #show-hide .view-more:focus {
+    outline: 0; }
 
 /*================ 
     Media Query 
