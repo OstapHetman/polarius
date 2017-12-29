@@ -1132,6 +1132,10 @@ footer {
     font-size: 1.5rem;
     color: #5d5c5b; }
 
+#goods #top-of-month .line-block {
+  padding-left: 0;
+  padding-right: 0; }
+
 #goods #top-of-month .catalog-items {
   justify-content: space-between; }
   #goods #top-of-month .catalog-items .catalog-item {
@@ -1148,8 +1152,26 @@ footer {
     #goods #top-of-month .catalog-items .view-more-block .view-more {
       display: block; }
 
-#goods #block1,
-#goods #block2 {
+#goods #block1_1,
+#goods #block1_2,
+#goods #block2_1,
+#goods #block2_2,
+#goods #block3_1,
+#goods #block3_2,
+#goods #block4_1,
+#goods #block4_2,
+#goods #block5_1,
+#goods #block5_2,
+#goods #block6_1,
+#goods #block6_2,
+#goods #block7_1,
+#goods #block7_2,
+#goods #block8_1,
+#goods #block8_2,
+#goods #block9_1,
+#goods #block9_2,
+#goods #block10_1,
+#goods #block10_2 {
   display: none; }
 
 #goods #show-hide .view-more-block {
