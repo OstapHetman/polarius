@@ -32,3 +32,26 @@ $btnBackground: #5e4e3a;
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    #download {
+        .text {
+            h2 {
+                text-align: center;
+                font-size: 2.2rem;
+            }
+        }
+        .row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .button {
+            padding-bottom: 20px;
+            margin-left: 0px !important;
+            a {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

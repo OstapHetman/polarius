@@ -944,6 +944,15 @@ nav {
       text-decoration: none;
       border: 0; }
 
+@media screen and (max-width: 992px) {
+  #portfolio .bottom-block .right-item {
+    margin-top: 0; }
+  #portfolio .bottom-block .left-item {
+    margin-top: 0px;
+    margin-bottom: 60px; }
+    #portfolio .bottom-block .left-item h3 {
+      margin-top: 0px; } }
+
 #partners {
   min-height: 325px;
   background-color: #d0a875; }
@@ -1001,6 +1010,18 @@ nav {
 #partners .multi-item-carousel .carouse-control.left, #partners .multi-item-carousel .carouse-control.right {
   background-image: none; }
 
+@media screen and (max-width: 992px) {
+  #partners .multi-item-carousel .carousel-control {
+    font-size: 3rem; }
+  #partners .multi-item-carousel .carousel-control.right {
+    margin-right: -50px; }
+  #partners .multi-item-carousel .carousel-control.left {
+    margin-left: -50px; } }
+
+@media screen and (max-width: 768px) {
+  #partners .head-text h2 {
+    font-size: 8vw; } }
+
 #download {
   min-height: 122px;
   background-color: #fde24c;
@@ -1026,12 +1047,27 @@ nav {
     #download .button a:hover {
       text-decoration: none; }
 
+@media screen and (max-width: 992px) {
+  #download .text h2 {
+    text-align: center;
+    font-size: 2.2rem; }
+  #download .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  #download .button {
+    padding-bottom: 20px;
+    margin-left: 0px !important; }
+    #download .button a {
+      font-size: 1.2rem; } }
+
 #footer-contact {
   min-height: 270px; }
   #footer-contact .links {
     padding-top: 50px;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    flex-wrap: wrap; }
     #footer-contact .links h1 {
       font-size: 2.3rem;
       color: #5f5141; }
@@ -1051,6 +1087,10 @@ nav {
           line-height: 1.6; }
           #footer-contact .links ul li a:hover {
             text-decoration: underline; }
+
+@media screen and (max-width: 498px) {
+  #footer-contact .links {
+    justify-content: space-between; } }
 
 footer {
   min-height: 110px;

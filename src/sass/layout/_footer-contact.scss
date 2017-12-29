@@ -6,6 +6,7 @@ $linksColor: #5d5c5b;
         padding-top: 50px;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         h1 {
             font-size: 2.3rem;
             color: $headerColor;
@@ -29,6 +30,14 @@ $linksColor: #5d5c5b;
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 498px) {
+    #footer-contact {
+        .links {
+            justify-content: space-between;
         }
     }
 }

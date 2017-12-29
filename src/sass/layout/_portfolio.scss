@@ -162,3 +162,20 @@ $portfolioBackground: #f1f0f0;
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    #portfolio {
+        .bottom-block {
+            .right-item {
+                margin-top: 0;
+            }
+            .left-item {
+                margin-top: 0px;
+                margin-bottom: 60px;
+                h3 {
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+}
