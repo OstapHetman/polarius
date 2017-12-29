@@ -1,11 +1,16 @@
+let block1 = document.getElementById("block1"),
+    block2 = document.getElementById("block2"),
+    btn = document.getElementById("show-hide-btn");
+
+btn.addEventListener("click", showHide);
+
 function showHide() {
-    var e = document.getElementById("myDiv");
-    var e2 = document.getElementById("myDiv2");
-    var btn = document.getElementById("show-hide-btn");
-    if (e2.style.display === "none") {
-        e2.style.display = "flex";
+    if (block1.style.display === "none" & block2.style.display === "none") {
+        block1.style.display = "flex";
+        block2.style.display = "flex";
         btn.style.display = "none";
     } else {
-        e2.style.display = "none";
+        block1.style.display = "none";
+        block2.style.display = "none";
     }
 }

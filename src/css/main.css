@@ -1135,7 +1135,6 @@ footer {
 #goods #top-of-month .catalog-items {
   justify-content: space-between; }
   #goods #top-of-month .catalog-items .catalog-item {
-    border: 1px red solid;
     max-width: 243px; }
   #goods #top-of-month .catalog-items .price h2 {
     font-size: 2.6rem; }
@@ -1148,6 +1147,25 @@ footer {
     display: block; }
     #goods #top-of-month .catalog-items .view-more-block .view-more {
       display: block; }
+
+#goods #block1,
+#goods #block2 {
+  display: none; }
+
+#goods #show-hide .view-more-block {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+#goods #show-hide .view-more {
+  margin-top: -60px;
+  margin-bottom: 50px;
+  background-color: #e9e9e9;
+  text-decoration: underline; }
+  #goods #show-hide .view-more:hover {
+    border: 0;
+    cursor: pointer; }
+  #goods #show-hide .view-more:focus {
+    outline: 0; }
 
 header {
   background-image: url("../img/header/header-1.jpg");
