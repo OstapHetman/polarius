@@ -502,37 +502,59 @@ nav {
   #myCarousel .carousel-caption {
     font-family: 'RoadRadio-Bold';
     bottom: 260px; }
+    #myCarousel .carousel-caption.third-caption h1 {
+      font-size: 4rem; }
     #myCarousel .carousel-caption h1 {
       font-size: 6rem;
       text-transform: uppercase; }
     #myCarousel .carousel-caption .view-more {
+      font-family: 'RoadRadio-Bold';
       background-color: #fde24c;
-      color: #302e28;
+      color: #000;
       font-size: 2rem;
       padding: 15px 40px 15px 40px;
       text-align: center;
-      margin-top: 20px;
-      display: inline-block; }
+      margin-top: 40px;
+      display: inline-block;
+      text-shadow: none; }
       #myCarousel .carousel-caption .view-more:hover {
         text-decoration: none; }
 
 #make-your-home {
   min-height: 620px; }
-  #make-your-home .head-text h2 {
-    color: #6a3f03;
-    font-size: 8.97vw;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    padding-top: 90px; }
-  #make-your-home .under-head-text h4 {
-    text-align: center;
-    color: #af9878;
-    font-size: 2.5rem;
-    font-family: 'Open Sans', sans-serif;
-    padding-top: 60px; }
-    #make-your-home .under-head-text h4 span {
-      text-transform: uppercase;
-      font-family: 'Carton'; }
+  #make-your-home .row:nth-child(1),
+  #make-your-home .row:nth-child(2) {
+    display: flex;
+    justify-content: center; }
+  #make-your-home .line-block {
+    padding-top: 130px; }
+  #make-your-home .head-text {
+    padding-top: 20px; }
+    #make-your-home .head-text h2 {
+      font-family: 'RoadRadio-Thin';
+      font-size: 6rem;
+      color: #5f5141;
+      text-align: center; }
+  #make-your-home .under-head-text {
+    padding-bottom: 50px; }
+    #make-your-home .under-head-text .about-company {
+      padding-top: 30px;
+      font-weight: bold;
+      font-size: 3rem; }
+    #make-your-home .under-head-text .company-text {
+      padding-top: 10px;
+      padding-bottom: 30px;
+      line-height: 1.5;
+      text-align: justify; }
+    #make-your-home .under-head-text h4 {
+      text-align: center;
+      color: #af9878;
+      font-size: 2.5rem;
+      font-family: 'Open Sans', sans-serif;
+      padding-top: 60px; }
+      #make-your-home .under-head-text h4 span {
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif; }
 
 @media screen and (max-width: 768px) {
   #make-your-home {
@@ -548,7 +570,7 @@ nav {
       padding-top: 30px; } }
 
 #sale {
-  min-height: 610px;
+  min-height: 565px;
   background-image: url("../img/sale/sale-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -558,7 +580,7 @@ nav {
   -webkit-background-size: cover;
   background-position: center center; }
   #sale .header-text {
-    padding-top: 70px; }
+    padding-top: 27px; }
     #sale .header-text h2 {
       font-family: 'RoadRadio-Bold';
       color: #fff;

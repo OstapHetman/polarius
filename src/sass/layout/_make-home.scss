@@ -1,18 +1,38 @@
 $headerTextColor: #6a3f03;
+$headtextColor: #5f5141;
 $underHeaadText: #af9878;
 #make-your-home {
     min-height: 620px;
+    .row:nth-child(1),
+    .row:nth-child(2) {
+        display: flex;
+        justify-content: center;
+    }
+    .line-block {
+        padding-top: 130px;
+    }
     .head-text {
+        padding-top: 20px;
         h2 {
-            color: $headerTextColor;
-            // font-size: 12rem;
-            font-size: 8.97vw;
+            font-family: 'RoadRadio-Thin';
+            font-size: 6rem;
+            color: $headtextColor;
             text-align: center;
-            font-family: 'Open Sans', sans-serif;
-            padding-top: 90px;
         }
     }
     .under-head-text {
+        padding-bottom: 50px;
+        .about-company {
+            padding-top: 30px;
+            font-weight: bold;
+            font-size: 3rem;
+        }
+        .company-text {
+            padding-top: 10px;
+            padding-bottom: 30px;
+            line-height: 1.5;
+            text-align: justify;
+        }
         h4 {
             text-align: center;
             color: $underHeaadText;
@@ -22,7 +42,7 @@ $underHeaadText: #af9878;
             padding-top: 60px;
             span {
                 text-transform: uppercase;
-                font-family: 'Carton';
+                font-family: 'Open Sans', sans-serif;
             }
         }
     }
