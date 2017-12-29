@@ -453,7 +453,7 @@ nav {
   align-items: center; }
   #test-nav .logo {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-top: 20px; }
@@ -500,7 +500,8 @@ nav {
       background-position: center center;
       min-height: 900px; }
   #myCarousel .carousel-caption {
-    font-family: 'RoadRadio-Bold'; }
+    font-family: 'RoadRadio-Bold';
+    bottom: 260px; }
     #myCarousel .carousel-caption.third-caption h1 {
       font-size: 4rem; }
     #myCarousel .carousel-caption h1 {
@@ -1189,7 +1190,7 @@ footer {
   #goods #show-hide .view-more:focus {
     outline: 0; }
 
-header {
+#goods header {
   background-image: url("../img/header/header-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1199,20 +1200,20 @@ header {
   -webkit-background-size: cover;
   background-position: center center;
   min-height: 900px; }
-  header .carousel-caption {
+  #goods header .carousel-caption {
     font-family: 'RoadRadio-Bold';
     right: 8%;
     left: 8%;
     bottom: -145px; }
-    header .carousel-caption h1 {
+    #goods header .carousel-caption h1 {
       font-size: 6rem;
       text-transform: uppercase;
       line-height: 1.4; }
-    header .carousel-caption h2 {
+    #goods header .carousel-caption h2 {
       font-family: 'Open Sans', sans-serif;
       font-size: 2.6rem;
       padding-top: 10px; }
-    header .carousel-caption .view-more {
+    #goods header .carousel-caption .view-more {
       font-family: 'RoadRadio-Bold';
       background-color: #fde24c;
       color: #000;
@@ -1222,7 +1223,7 @@ header {
       margin-top: 80px;
       display: inline-block;
       text-shadow: none; }
-      header .carousel-caption .view-more:hover {
+      #goods header .carousel-caption .view-more:hover {
         text-decoration: none; }
 
 /*================ 
