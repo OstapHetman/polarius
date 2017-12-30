@@ -73,6 +73,10 @@ $underTextColor: #e3e1e1;
             &:hover {
                 text-decoration: none;
             }
+            &:focus {
+                text-decoration: none;
+                outline: none;
+            }
         }
     }
 }

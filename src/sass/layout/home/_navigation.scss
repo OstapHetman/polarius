@@ -88,3 +88,128 @@ nav {
         }
     }
 }
+
+.logo-on-page {
+    display: flex;
+    justify-content: center;
+    img {
+        max-width: 180px;
+        height: auto;
+        position: absolute;
+        z-index: 2;
+        padding-top: 20px;
+    }
+}
+
+aside {
+    height: 100%;
+    width: 25%;
+    background: #fbe3c2;
+    transform: translate(-200%);
+    transition: all 0.7s;
+    text-align: left;
+    float: left;
+    position: absolute;
+    z-index: 999;
+    box-shadow: 14px 14px 20px 0 rgba(0, 0, 0, 0.3);
+    img.logo {
+        max-width: 50%;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .menu-items {
+        font-family: 'RoadRadio-Thin';
+        font-size: 2.6rem;
+        font-weight: 500;
+        font-size: 2rem;
+        width: 100%;
+        display: block;
+        text-align: center;
+        background: transparent;
+        border: none;
+        padding: 2rem 0;
+        transition: all 0.1s;
+        transition: all 0.3s;
+        a {
+            color: #211505;
+            text-decoration: none;
+        }
+        &:hover {
+            cursor: pointer;
+            background: white;
+        }
+        &.city {
+            border-top: 1px rgba(197, 185, 168, 0.3) solid;
+            padding-top: 50px;
+            color: #211505;
+            &:hover {
+                background: none;
+                cursor: default;
+            }
+        }
+        &.street {
+            padding: 0;
+            color: #211505;
+            &:hover {
+                background: none;
+                cursor: default;
+            }
+        }
+        &.first-item {
+            border-top: 1px rgba(197, 185, 168, 0.3) solid;
+            margin-top: 20px;
+        }
+    }
+    .right-phone {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: initial; */
+        align-items: center;
+        justify-content: left;
+        margin-top: 50%;
+    }
+    .right-phone p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2.2rem;
+        text-align: center;
+        padding-bottom: 10px;
+        color: #000;
+        ;
+    }
+    .right-phone .get-call {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.9rem;
+        background-color: #4c3823;
+        color: #fff;
+        padding: 4px 10px 4px 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+input {
+    display: none;
+    // margin: 3em;
+    // float: right;
+}
+
+input+label {
+    float: right;
+    display: inline-block;
+    padding: 0.5em;
+    background: transparent;
+    font-size: 2.7em;
+    color: #fde24c;
+    position: absolute;
+    z-index: 999;
+    right: 85px;
+    top: 45px;
+}
+
+input+label:hover {
+    cursor: pointer;
+}
+
+input:checked+label+aside {
+    transform: translate(0);
+}

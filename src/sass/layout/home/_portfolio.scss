@@ -64,6 +64,9 @@ $portfolioTextColor: #e6e5e3;
                     &:hover {
                         text-decoration: none;
                     }
+                    &:focus {
+                        text-decoration: none;
+                    }
                 }
             }
         }
@@ -123,6 +126,10 @@ $portfolioTextColor: #e6e5e3;
                     display: inline-block;
                     &:hover {
                         text-decoration: none;
+                    }
+                    &:focus {
+                        text-decoration: none;
+                        outline: 0;
                     }
                 }
             }
