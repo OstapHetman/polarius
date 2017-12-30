@@ -1,0 +1,123 @@
+#advantages {
+    background-image: url('../img/advantages/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+    min-height: 1570px;
+    .row:nth-child(1),
+    .row:nth-child(2) {
+        display: flex;
+        justify-content: center
+    }
+    .line-block {
+        padding-top: 75px;
+    }
+    .head-text {
+        padding-bottom: 90px;
+        h2 {
+            font-family: 'RoadRadio-Thin';
+            font-size: 6rem;
+            color: #fff;
+            text-align: center;
+        }
+    }
+    .text-block {
+        display: flex;
+        align-items: center;
+        &.second-text {
+            margin-top: 30px;
+        }
+        &.third-text {
+            margin-top: 30px;
+        }
+        &.fourth-text {
+            margin-top: 30px;
+        }
+        .number {
+            h2 {
+                font-family: 'RoadRadio-Thin';
+                font-size: 17rem;
+                color: #fff;
+            }
+        }
+        .text {
+            padding-top: 25px;
+            padding-left: 10px;
+            p {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 2.3rem;
+                color: #fff;
+            }
+        }
+    }
+    .view-more-block {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        .view-more {
+            font-family: 'RoadRadio-Bold';
+            background-color: $viewMoreBtnBG;
+            color: #000;
+            font-size: 4.2rem;
+            padding: 15px 40px 15px 40px;
+            text-align: center;
+            margin-top: 40px;
+            display: inline-block;
+            &:hover {
+                text-decoration: none;
+            }
+            &:focus {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    #advantages {
+        min-height: 1100px;
+        .head-text {
+            padding-bottom: 0px;
+            h2 {
+                font-size: 4rem;
+            }
+        }
+        .text-block {
+            .number h2 {
+                font-size: 6rem;
+            }
+            .text p {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #advantages {
+        min-height: 100px;
+        .head-text {
+            padding-bottom: 0px;
+            h2 {
+                font-size: 3rem;
+            }
+        }
+        .text-block {
+            .number h2 {
+                font-size: 5.5rem;
+            }
+            .text p {
+                font-size: 1.4rem;
+            }
+        }
+        .view-more-block .view-more {
+            font-size: 2rem;
+            margin-top: 0px;
+            margin-bottom: 40px;
+        }
+    }
+}

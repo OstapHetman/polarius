@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Polarius | Винил</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Main Style-->
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        aside {
+            height: 100%;
+            width: 25%;
+            background: #fde24c;
+            transform: translate(-200%);
+            transition: all 0.7s;
+            text-align: left;
+            float: left;
+            position: fixed;
+            box-shadow: 14px 14px 20px 0 rgba(0, 0, 0, 0.3);
+        }
+        
+        span {
+            font-family: 'RoadRadio-Bold';
+            background-color: #fde24c;
+            color: #000;
+            font-size: 2rem;
+            width: 100%;
+            display: block;
+            text-align: center;
+            background: transparent;
+            border: none;
+            padding: 2rem 0;
+            transition: all 0.1s;
+            transition: all 0.3s;
+        }
+        
+        span:nth-child(1) {
+            margin-top: 100px;
+        }
+        
+        span:hover {
+            cursor: pointer;
+            background: white;
+        }
+        
+        h1 {
+            font-size: 4em;
+        }
+        
+        input {
+            display: none;
+            margin: 3em;
+            float: right;
+        }
+        
+        input+label {
+            float: right;
+            display: inline-block;
+            padding: 0.5em;
+            background: transparent;
+            font-size: 2.7em;
+            color: #252930;
+        }
+        
+        input+label:hover {
+            cursor: pointer;
+        }
+        
+        input:checked+label+aside {
+            transform: translate(0);
+        }
+        
+        .right-phone {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: initial; */
+            align-items: center;
+            justify-content: left;
+            margin-top: 50%;
+        }
+        
+        .right-phone p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 2.2rem;
+            text-align: center;
+            padding-bottom: 10px;
+            color: #000;
+            ;
+        }
+        
+        .right-phone .get-call {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.9rem;
+            background-color: #4c3823;
+            color: #fff;
+            padding: 4px 10px 4px 10px;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body id="test-page">
+    <input type="checkbox" id="check">
+    <label for="check"><i class="fa fa-bars"></i></label>
+
+    <aside>
+        <span class="menu-items">товары</span>
+        <span class="menu-items">Преемущества</span>
+        <span class="menu-items">Портфолио</span>
+        <span class="menu-items">контакты</span>
+        <span class="menu-items">Блог</span>
+
+    </aside>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -79,43 +79,10 @@ $carouselIndicators: #eab873;
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     #myCarousel {
         .carousel-caption h1 {
             font-size: 4rem;
-        }
-        .carousel-caption.third-caption h1 {
-            font-size: 4rem;
-        }
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .logo-on-page img {
-        max-width: 120px;
-    }
-    input+label {
-        right: 0%;
-        top: 0%;
-    }
-    #myCarousel {
-        .carousel-control {
-            display: none;
-        }
-        .carousel-caption {
-            bottom: 45px;
-        }
-        .carousel-caption h1 {
-            font-size: 2rem;
-        }
-        .carousel-caption.third-caption h1 {
-            font-size: 2rem;
-        }
-        .carousel-inner .item {
-            min-height: 500px;
-        }
-        .carousel-inner .item.active {
-            min-height: 500px;
         }
     }
 }
