@@ -114,3 +114,18 @@
             }
         }
     }
+    
+    @media screen and (max-width: 480px) {
+        #partners {
+            min-height: 225px;
+            .multi-item-carousel {
+                .carousel-control {
+                    display: none;
+                }
+            }
+        }
+        #partners .multi-item-carousel .item.active .logoG,
+        #partners .multi-item-carousel .item.active .smi {
+            padding-top: 0;
+        }
+    }

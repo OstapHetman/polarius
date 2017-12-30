@@ -96,7 +96,7 @@ $carouselIndicators: #eab873;
     }
     input+label {
         right: 0%;
-        top: 0%;
+        top: 4%;
     }
     #myCarousel {
         .carousel-control {
@@ -110,6 +110,12 @@ $carouselIndicators: #eab873;
         }
         .carousel-caption.third-caption h1 {
             font-size: 2rem;
+        }
+        .carousel-caption.luxury h1 {
+            padding-bottom: 45px;
+        }
+        .carousel-caption.ideal h1 {
+            padding-bottom: 45px
         }
         .carousel-inner .item {
             min-height: 500px;

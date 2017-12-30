@@ -25,3 +25,9 @@ footer {
         color: $textColor;
     }
 }
+
+@media screen and (max-width: 480px) {
+    #footer-contact .links {
+        padding-top: 0px;
+    }
+}

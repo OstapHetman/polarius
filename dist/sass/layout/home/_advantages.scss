@@ -100,10 +100,17 @@
 @media screen and (max-width: 480px) {
     #advantages {
         min-height: 100px;
+        .line-block {
+            padding-top: 30px;
+            img {
+                max-width: 70%;
+                margin: 0 auto;
+            }
+        }
         .head-text {
             padding-bottom: 0px;
             h2 {
-                font-size: 3rem;
+                font-size: 2.7rem;
             }
         }
         .text-block {

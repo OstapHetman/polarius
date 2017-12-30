@@ -213,3 +213,13 @@ input+label:hover {
 input:checked+label+aside {
     transform: translate(0);
 }
+
+@media screen and (max-width: 480px) {
+    aside {
+        width: 50%;
+        .menu-items {
+            font-size: 1.3rem;
+            padding: 0.8rem 0;
+        }
+    }
+}
