@@ -49,4 +49,18 @@ $blogBackground: white;
     }
 }
 
-// margin-top: 85px;
+@media screen and (max-width:800px) {
+    #blog #portfolio .second-top-block .left-item,
+    #blog #portfolio .second-top-block .right-item {
+        margin-top: 0;
+    }
+    #blog #portfolio .third-top-block .left-item {
+        margin-bottom: 0;
+    }
+    #blog #portfolio .third-top-block .right-item {
+        margin-top: 0;
+    }
+    #blog #portfolio .under-blog-text {
+        margin-top: 10px;
+    }
+}

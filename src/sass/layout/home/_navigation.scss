@@ -92,6 +92,10 @@ nav {
 .logo-on-page {
     display: flex;
     justify-content: center;
+    .logo-link {
+        display: block;
+        width: 180px;
+    }
     img {
         max-width: 180px;
         height: auto;
@@ -220,6 +224,14 @@ input:checked+label+aside {
         .menu-items {
             font-size: 1.3rem;
             padding: 0.8rem 0;
+        }
+    }
+    .logo-on-page {
+        display: flex;
+        justify-content: center;
+        .logo-link {
+            display: block;
+            width: 35%;
         }
     }
 }

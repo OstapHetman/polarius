@@ -50,3 +50,51 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    #goods {
+        header {
+            min-height: 700px;
+            .carousel-caption.parket {
+                padding-top: 60px;
+                h2 {
+                    br {
+                        display: block;
+                    }
+                }
+            }
+            .carousel-caption.laminat {
+                padding-top: 60px;
+            }
+            .carousel-caption {
+                position: inherit;
+            }
+            .carousel-caption h1 {
+                font-size: 2rem;
+            }
+            .carousel-caption h2 {
+                font-size: 1.4rem;
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #goods {
+        header {
+            min-height: 580px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #goods {
+        header {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

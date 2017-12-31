@@ -213,8 +213,11 @@ $portfolioTextColor: #e6e5e3;
             p {
                 font-size: 1.4rem;
             }
-            .view-more-block .view-more {
-                font-size: 1.6rem;
+            .view-more-block {
+                padding-bottom: 55px;
+                .view-more {
+                    font-size: 1.6rem;
+                }
             }
         }
         .bottom-block .left-item {
@@ -227,8 +230,11 @@ $portfolioTextColor: #e6e5e3;
             p {
                 font-size: 1.4rem;
             }
-            .view-more-block .view-more {
-                font-size: 1.6rem;
+            .view-more-block {
+                padding-bottom: 55px;
+                .view-more {
+                    font-size: 1.6rem;
+                }
             }
         }
     }
