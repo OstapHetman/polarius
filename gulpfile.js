@@ -5,7 +5,8 @@ const gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     cleanCSS = require('gulp-clean-css'),
     uglify = require('gulp-uglify'),
-    htmlmin = require('gulp-htmlmin');
+    htmlmin = require('gulp-htmlmin'),
+    pump = require('pump');
 
 gulp.task('sass', function() {
     return gulp.src('src/sass/**/*.scss')
@@ -26,11 +27,23 @@ gulp.task('imagemin', () =>
     .pipe(gulp.dest('dist/img'))
 );
 
-gulp.task('compress', function() {
-    return gulp.src('src/js/*.js')
-        .pipe(uglify())
-        .pipe(gulp.dest('dist/js'));
+// gulp.task('compress', function() {
+//     return gulp.src('src/js/*.js')
+//         .pipe(uglify())
+//         .pipe(gulp.dest('dist/js'));
+// });
+
+gulp.task('compress', function(cb) {
+    pump([
+            gulp.src('src/js/*.js'),
+            uglify(),
+            gulp.dest('dist/js')
+        ],
+        cb
+    );
 });
+
+
 
 gulp.task('minify', function() {
     return gulp.src('src/*.html')

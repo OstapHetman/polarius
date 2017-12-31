@@ -53,19 +53,19 @@
             <div class="item active">
                 <div class="carousel-caption luxury">
                     <h1>Напольные покрытия класса «Люкс»</h1>
-                    <p><a class="view-more" href="#" role="button">В каталог</a></p>
+                    <p><a class="view-more" href="parket.html" role="button">В каталог</a></p>
                 </div>
             </div>
             <div class="item">
                 <div class="carousel-caption ideal">
                     <h1>ИДЕАЛЬНЫЙ ПОЛ ДЛЯ ВАШЕГО ДОМА</h1>
-                    <p><a class="view-more" href="#" role="button">В каталог</a></p>
+                    <p><a class="view-more" href="laminat.html" role="button">В каталог</a></p>
                 </div>
             </div>
             <div class="item">
                 <div class="carousel-caption third-caption">
                     <h1>Превращаем интерьер в искусство. Убедитесь в этом сами или поручите Вашему дизайнеру</h1>
-                    <p><a class="view-more" href="#" role="button">В каталог</a></p>
+                    <p><a class="view-more" href="vinil.html" role="button">В каталог</a></p>
                 </div>
             </div>
         </div>
@@ -95,7 +95,6 @@
             </div>
             <div class="row">
                 <div class="col-md-12 under-head-text">
-                    <!-- <h4 class="about-company">О компании <span>Polarius</span></h4> -->
                     <h4 class="company-text">Мы поставляем в Украину напольные покрытия высшего качества из Бельгии, Германии и Польши. Напрямую с заводов- производителей ТМ Berry Alloc, Balterio, TM Grabo, TM Egger. Следим за последними тенденциями в дизайне, чтобы удовлетворить
                         всевозможные вкусы от классического до авангардного. Стремимся, чтобы лучшее из Европы дополняло и преобразовывало интерьер Вашего дома и офиса.</h4>
                 </div>
@@ -145,7 +144,7 @@
             </div>
             <div class="row">
                 <div class="view-more-block">
-                    <a href="#" class="view-more">Узнать подробнее</a>
+                    <a href="sale.html" class="view-more">Узнать подробнее</a>
                 </div>
             </div>
         </div>
@@ -291,13 +290,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="container" id="show-hide">
-            <div class="row">
-                <div class="view-more-block">
-                    <button class="view-more" id="show-hide-btn" onclick="showHide()">Показать больше</button>
-                </div>
-            </div>
-        </div> -->
     </section>
 
     <!-- END TOP OF MONTH SECTION -->
@@ -412,11 +404,6 @@
     <!-- START PARTNERS  -->
     <section id="partners">
         <div class="container">
-            <!-- <div class="row">
-                <div class="col-md-2 line-block">
-                    <img src="img/advantages/line.png" class="image-responsive" alt="line">
-                </div>
-            </div> -->
             <div class="row">
                 <div class="col-md-8 head-text">
                     <h2>наши партнеры</h2>
@@ -502,16 +489,16 @@
                     <div class="col-md-3">
                         <h1>ТОВАРЫ</h1>
                         <ul>
-                            <li><a href="#">Модульный паркет</a></li>
-                            <li><a href="#">Паркетная доска</a></li>
-                            <li><a href="#">Модульный винил</a></li>
+                            <li><a href="laminat.html">Модульный ламинат</a></li>
+                            <li><a href="parket.html">Паркетная доска</a></li>
+                            <li><a href="vinil.html">Модульный винил</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 col-md-offset-1">
                         <h1>ЕЩЕ</h1>
                         <ul>
-                            <li><a href="#">Блог</a></li>
-                            <li><a href="#">Портфолию</a></li>
+                            <li><a href="blog.html">Блог</a></li>
+                            <li><a href="index.html#portfolio">Портфолио</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 col-md-offset-1 contacts">
@@ -519,7 +506,7 @@
                         <ul>
                             <li>Украина, г. Киев</li>
                             <li>Проспект Победы, 4</li>
-                            <li>+380 (67) 507 56-09</li>
+                            <li><a href="tel:+380 (67) 507 56-09"> +380 (67) 507 56-09</a></li>
                         </ul>
                     </div>
                 </div>
@@ -551,31 +538,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Main JavaScript File -->
     <script src="js/main.js"></script>
-    <!-- Main JavaScript File -->
+    <!-- CoundDown JavaScript File -->
     <script src="js/countdown.js"></script>
+    <!-- CoundDown JavaScript File -->
+    <script src="js/multi-item-carousel.js"></script>
 
-    <script>
-        // Instantiate the Bootstrap carousel
-        $('.multi-item-carousel').carousel({
-            interval: 4000
-        });
-
-        // for every slide in carousel, copy the next slide's item in the slide.
-        // Do the same for the next, next item.
-        $('.multi-item-carousel .item').each(function() {
-            var next = $(this).next();
-            if (!next.length) {
-                next = $(this).siblings(':first');
-            }
-            next.children(':first-child').clone().appendTo($(this));
-
-            if (next.next().length > 0) {
-                next.next().children(':first-child').clone().appendTo($(this));
-            } else {
-                $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-            }
-        });
-    </script>
 </body>
 
 </html>
