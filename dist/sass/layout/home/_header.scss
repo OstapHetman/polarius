@@ -1,0 +1,124 @@
+$viewMoreBtnBG: #fde24c;
+$carouselIndicators: #eab873;
+#myCarousel {
+    // margin-top: -130px;
+    margin-top: 0;
+    .carousel-control {
+        font-size: 90px;
+        opacity: 0.1;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .carousel-indicators {
+        li {
+            &.active {
+                background-color: $viewMoreBtnBG;
+            }
+            border-color: $carouselIndicators;
+        }
+    }
+    .carousel-inner {
+        .item {
+            &.active {
+                background-image: url('../img/header/header-1.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                -ms-background-size: cover;
+                -o-background-size: cover;
+                -moz-background-size: cover;
+                -webkit-background-size: cover;
+                background-position: center center;
+                min-height: 900px;
+            }
+            background-image: url('../img/header/header-1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            -ms-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-position: center center;
+            min-height: 900px;
+        }
+    }
+    .carousel-caption {
+        &.third-caption {
+            h1 {
+                font-size: 4rem;
+            }
+        }
+        font-family: 'RoadRadio-Bold';
+        bottom: 260px;
+        h1 {
+            font-size: 6rem;
+            // font-size: 4.39vw;
+            text-transform: uppercase;
+        }
+        .view-more {
+            font-family: 'RoadRadio-Bold';
+            background-color: #fde24c;
+            color: #000;
+            font-size: 2rem;
+            padding: 15px 40px 15px 40px;
+            text-align: center;
+            margin-top: 40px;
+            display: inline-block;
+            text-shadow: none;
+            &:hover {
+                text-decoration: none;
+            }
+            &:focus {
+                text-decoration: none;
+                outline: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #myCarousel {
+        .carousel-caption h1 {
+            font-size: 4rem;
+        }
+        .carousel-caption.third-caption h1 {
+            font-size: 4rem;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo-on-page img {
+        max-width: 120px;
+    }
+    input+label {
+        right: 0%;
+        top: 4%;
+    }
+    #myCarousel {
+        .carousel-control {
+            display: none;
+        }
+        .carousel-caption {
+            bottom: 45px;
+        }
+        .carousel-caption h1 {
+            font-size: 2rem;
+        }
+        .carousel-caption.third-caption h1 {
+            font-size: 2rem;
+        }
+        .carousel-caption.luxury h1 {
+            padding-bottom: 45px;
+        }
+        .carousel-caption.ideal h1 {
+            padding-bottom: 45px
+        }
+        .carousel-inner .item {
+            min-height: 500px;
+        }
+        .carousel-inner .item.active {
+            min-height: 500px;
+        }
+    }
+}

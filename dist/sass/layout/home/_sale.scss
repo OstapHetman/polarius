@@ -1,0 +1,131 @@
+$viewMoreBtnBG: #fde24c;
+$underTextColor: #e3e1e1;
+#sale {
+    min-height: 540px;
+    background-image: url('../img/sale/sale-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+    .header-text {
+        padding-top: 27px;
+        h2 {
+            font-family: 'RoadRadio-Bold';
+            color: #fff;
+            // font-size: 7rem;
+            font-size: 5vw;
+            text-align: center;
+        }
+    }
+    .under-text {
+        padding-top: 10px;
+        h4 {
+            font-family: 'RoadRadio-Thin';
+            color: $underTextColor;
+            font-size: 3.2rem;
+            text-align: center;
+        }
+    }
+    .sale-time-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // padding-top: 30px;
+        .line:before {
+            content: " ";
+            position: absolute;
+            top: 38px;
+            left: -30px;
+            bottom: 63px;
+            border-left: 2px solid #fff;
+            opacity: 0.1;
+        }
+        .time-item {
+            text-align: center;
+            h2 {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 9rem;
+                color: white;
+            }
+            p {
+                font-family: 'RoadRadio-Thin';
+                color: #fff;
+                font-size: 2.5rem;
+                padding-left: 10px;
+            }
+        }
+    }
+    .view-more-block {
+        display: flex;
+        justify-content: center;
+        .view-more {
+            font-family: 'RoadRadio-Bold';
+            background-color: $viewMoreBtnBG;
+            color: #000;
+            font-size: 2rem;
+            padding: 15px 40px 15px 40px;
+            text-align: center;
+            margin-top: 40px;
+            display: inline-block;
+            &:hover {
+                text-decoration: none;
+            }
+            &:focus {
+                text-decoration: none;
+                outline: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    #sale {
+        .header-text h2 {
+            font-size: 2.7rem;
+        }
+        .under-text h4 {
+            font-size: 2rem;
+        }
+        .sale-time-block .time-item {
+            p {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #sale {
+        min-height: 345px;
+        .header-text {
+            padding-top: 0px;
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+        .under-text h4 {
+            font-size: 1.7rem;
+        }
+        .sale-time-block .time-item {
+            p {
+                font-size: 0.92rem;
+                padding-left: 0;
+            }
+            h2 {
+                font-size: 2.8rem;
+            }
+        }
+        .sale-time-block .line:before {
+            display: none;
+        }
+        .view-more-block .view-more {
+            font-size: 2rem;
+        }
+    }
+}

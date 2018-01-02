@@ -1,0 +1,83 @@
+$headerTextColor: #6a3f03;
+$headtextColor: #5f5141;
+$underHeaadText: #af9878;
+#make-your-home {
+    min-height: 620px;
+    .row:nth-child(1),
+    .row:nth-child(2) {
+        display: flex;
+        justify-content: center;
+    }
+    .line-block {
+        padding-top: 130px;
+    }
+    .head-text {
+        padding-top: 20px;
+        h2 {
+            font-family: 'RoadRadio-Thin';
+            font-size: 6rem;
+            color: $headtextColor;
+            text-align: center;
+        }
+    }
+    .under-head-text {
+        padding-bottom: 50px;
+        .about-company {
+            padding-top: 30px;
+            font-weight: bold;
+            font-size: 3rem;
+        }
+        .company-text {
+            padding-top: 10px;
+            padding-bottom: 30px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        h4 {
+            text-align: center;
+            color: $underHeaadText;
+            font-size: 2.5rem;
+            // font-size: 1.9vw;
+            font-family: 'Open Sans', sans-serif;
+            padding-top: 60px;
+            span {
+                text-transform: uppercase;
+                font-family: 'Open Sans', sans-serif;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #make-your-home {
+        min-height: 345px;
+        .head-text {
+            h2 {
+                padding-top: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #make-your-home {
+        min-height: 270px;
+        .line-block {
+            padding-top: 50px;
+            img {
+                max-width: 70%;
+                margin: 0 auto;
+            }
+        }
+        .head-text h2 {
+            font-size: 2.7rem;
+        }
+        .under-head-text {
+            padding-bottom: 20px;
+            h4 {
+                font-size: 1.7rem;
+                padding-top: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+$blogBackground: white;
+#blog {
+    #portfolio {
+        background-color: $blogBackground;
+        .head-text {
+            padding-bottom: 10px;
+        }
+        .under-blog-text {
+            margin-bottom: 100px;
+            margin-top: 25px;
+            p {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 2.6rem;
+                color: #8a8787;
+                text-align: center;
+            }
+        }
+        .second-top-block .left-item,
+        .second-top-block .right-item {
+            margin-top: 85px;
+        }
+        .third-top-block .left-item,
+        .third-top-block .right-item {
+            margin-top: 85px;
+            margin-bottom: 85px;
+        }
+        .top-block .left-item {
+            min-height: 420px;
+            h3 {
+                font-size: 2rem;
+                padding-top: 30px;
+                margin-bottom: 20px;
+            }
+        }
+        .top-block .right-item {
+            min-height: 420px;
+        }
+        .bottom-block .right-item {
+            min-height: 420px;
+        }
+        .bottom-block .left-item {
+            min-height: 420px;
+            h3 {
+                font-size: 2rem;
+                padding-top: 30px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    #blog #portfolio .second-top-block .left-item,
+    #blog #portfolio .second-top-block .right-item {
+        margin-top: 0;
+    }
+    #blog #portfolio .third-top-block .left-item {
+        margin-bottom: 0;
+    }
+    #blog #portfolio .third-top-block .right-item {
+        margin-top: 0;
+    }
+    #blog #portfolio .under-blog-text {
+        margin-top: 10px;
+    }
+}

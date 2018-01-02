@@ -151,6 +151,38 @@
     </section>
     <!-- END SALE SECTION -->
 
+    <!-- START MODAL -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <p>Оставьте заявку и наш менеджер свяжется с Вами в течение 1 минути!</p>
+                    <form action="mailer.php" method="post">
+
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Ваше имя" aria-describedby="basic-addon1" name="name">
+                            <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Ваш номер" aria-describedby="basic-addon1" name="phone">
+                            <span class="input-group-addon" id="basic-addon1"> <span class="glyphicon glyphicon-earphone"></span> </span>
+                        </div>
+
+                        <button type="submit">Перезвоните мне</button>
+                    </form>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!-- END MODAL -->
+
     <!-- START TOP OF MONTH SECTION -->
 
     <section id="top-of-month">
@@ -197,10 +229,9 @@
                         <h2>2624 грн.</h2>
                     </div>
                     <div class="view-more-block">
-                        <a href="#" class="view-more">Узнать подробнее</a>
+                        <a href="#" class="view-more" data-toggle="modal" data-target="#myModal" id="modalBtn">Узнать подробнее</a>
                     </div>
                 </div>
-
                 <div class="col-md-3 catalog-item">
                     <div class="parket-photo">
                         <img src="img/top/parket-2.png" alt="parket-1">
@@ -214,7 +245,7 @@
                         <h2>2624 грн.</h2>
                     </div>
                     <div class="view-more-block">
-                        <a href="#" class="view-more">Узнать подробнее</a>
+                        <a href="#" class="view-more" data-toggle="modal" data-target="#myModal">Узнать подробнее</a>
                     </div>
                 </div>
 
@@ -231,7 +262,7 @@
                         <h2>2992 грн.</h2>
                     </div>
                     <div class="view-more-block">
-                        <a href="#" class="view-more">Узнать подробнее</a>
+                        <a href="#" class="view-more" data-toggle="modal" data-target="#myModal">Узнать подробнее</a>
                     </div>
                 </div>
             </div>
@@ -251,7 +282,7 @@
                         <h2>2624 грн.</h2>
                     </div>
                     <div class="view-more-block">
-                        <a href="#" class="view-more">Узнать подробнее</a>
+                        <a href="#" class="view-more" data-toggle="modal" data-target="#myModal">Узнать подробнее</a>
                     </div>
                 </div>
 
@@ -268,7 +299,7 @@
                         <h2>2624 грн.</h2>
                     </div>
                     <div class="view-more-block">
-                        <a href="#" class="view-more">Узнать подробнее</a>
+                        <a href="#" class="view-more" data-toggle="modal" data-target="#myModal">Узнать подробнее</a>
                     </div>
                 </div>
 
@@ -285,7 +316,7 @@
                         <h2>2992 грн.</h2>
                     </div>
                     <div class="view-more-block">
-                        <a href="#" class="view-more">Узнать подробнее</a>
+                        <a href="#" class="view-more" data-toggle="modal" data-target="#myModal">Узнать подробнее</a>
                     </div>
                 </div>
             </div>
@@ -537,11 +568,14 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Main JavaScript File -->
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
     <!-- CoundDown JavaScript File -->
-    <script src="js/countdown.js"></script>
-    <!-- CoundDown JavaScript File -->
+    <!-- <script src="js/countdown.js"></script> -->
+    <script src="js/oneTimer.js"></script>
+    <!-- Carousel File -->
     <script src="js/multi-item-carousel.js"></script>
+    <!-- Carousel File -->
+    <!-- <script src="js/modal.js"></script> -->
 
 </body>
 

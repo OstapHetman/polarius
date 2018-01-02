@@ -151,6 +151,38 @@
     </section>
     <!-- END SALE SECTION -->
 
+    <!-- START MODAL -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <p>Оставьте заявку и наш менеджер свяжется с Вами в течение 1 минути!</p>
+                    <form action="mailer.php" method="post">
+
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-envelope"></span></span>
+                            <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1" name="email">
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1"> <span class="glyphicon glyphicon-earphone"></span> </span>
+                            <input type="text" class="form-control" placeholder="ваш номер" aria-describedby="basic-addon1" name="phone">
+                        </div>
+
+                        <button class="btn" type="submit">Перезвоните мне</button>
+                    </form>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!-- END MODAL -->
+
     <!-- START TOP OF MONTH SECTION -->
 
     <section id="top-of-month">
@@ -197,10 +229,9 @@
                         <h2>2624 грн.</h2>
                     </div>
                     <div class="view-more-block">
-                        <a href="#" class="view-more">Узнать подробнее</a>
+                        <a href="#" class="view-more" data-toggle="modal" data-target="#myModal">Узнать подробнее</a>
                     </div>
                 </div>
-
                 <div class="col-md-3 catalog-item">
                     <div class="parket-photo">
                         <img src="img/top/parket-2.png" alt="parket-1">
@@ -542,6 +573,9 @@
     <script src="js/countdown.js"></script>
     <!-- CoundDown JavaScript File -->
     <script src="js/multi-item-carousel.js"></script>
+    <script>
+        $('#myModal').modal(options)
+    </script>
 
 </body>
 
