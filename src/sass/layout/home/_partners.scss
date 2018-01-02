@@ -129,3 +129,13 @@
             padding-top: 0;
         }
     }
+    
+    @media screen and (max-width: 700px) {
+        #partners {
+            .multi-item-carousel {
+                .carousel-control {
+                    display: none;
+                }
+            }
+        }
+    }

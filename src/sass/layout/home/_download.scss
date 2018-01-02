@@ -29,6 +29,10 @@ $btnBackground: #5e4e3a;
             &:hover {
                 text-decoration: none;
             }
+            &:focus {
+                text-decoration: none;
+                outline: 0;
+            }
         }
     }
 }
