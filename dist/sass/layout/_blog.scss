@@ -1,0 +1,28 @@
+#blog1,
+#blog2,
+#blog3,
+#blog4,
+#blog5 {
+    .modal-dialog {
+        max-width: unset;
+        .head-text h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 3.5rem;
+            margin-top: 0;
+            color: #5f5141;
+            text-align: center;
+        }
+        .image-block {
+            img {
+                max-width: 80%;
+                margin: 0 auto;
+            }
+        }
+        .description-block {
+            p {
+                text-align: justify;
+                padding: 20px;
+            }
+        }
+    }
+}

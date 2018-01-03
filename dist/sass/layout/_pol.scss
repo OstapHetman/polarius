@@ -1,0 +1,34 @@
+#pol {
+    .modal-dialog {
+        max-width: unset;
+    }
+    .head-text h2 {
+        font-family: RoadRadio-Thin;
+        font-size: 4.7rem;
+        color: #5f5141;
+        text-align: center;
+    }
+    .line-block {
+        img {
+            margin: 0 auto;
+        }
+    }
+    .links {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 20px;
+        a {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 2.75rem;
+            color: #9a7d56;
+            text-align: center;
+            margin-top: 10px;
+            text-decoration: none;
+            background-color: #f8f8f8;
+            padding: 5px 20px 5px 20px;
+        }
+         :hover {
+            text-decoration: none;
+        }
+    }
+}
