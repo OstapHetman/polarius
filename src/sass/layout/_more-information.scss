@@ -122,8 +122,8 @@
         font-size: 2rem;
     }
     .modal-dialog.more-information .modal-body .left-side .under-image {
-        flex-wrap: wrap;
         justify-content: center;
+        flex-direction: column;
     }
     .modal-dialog.more-information .modal-body .left-side .get {
         font-size: 1.4rem;

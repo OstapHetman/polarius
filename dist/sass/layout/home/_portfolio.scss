@@ -1,0 +1,241 @@
+$portfolioBackground: #f1f0f0;
+$portfolioTextColor: #e6e5e3;
+#portfolio {
+    background-color: $portfolioBackground;
+    min-height: 1325px;
+    .row:nth-child(1),
+    .row:nth-child(2) {
+        display: flex;
+        justify-content: center
+    }
+    .line-block {
+        padding-top: 75px;
+    }
+    .head-text {
+        padding-top: 20px;
+        padding-bottom: 90px;
+        h2 {
+            font-family: 'RoadRadio-Thin';
+            font-size: 6rem;
+            color: $headtextColor;
+            text-align: center;
+        }
+    }
+    .top-block {
+        .left-item {
+            background-image: url('../img/portfolio/work-3.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            -ms-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-position: center center;
+            min-height: 400px;
+            h3 {
+                font-family: 'RoadRadio-Thin';
+                color: $portfolioTextColor;
+                font-size: 2.5rem;
+                padding-top: 50px;
+            }
+            h2 {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 3.5rem;
+                color: #fff;
+                margin-top: 0;
+            }
+            p {
+                font-family: 'Open Sans', sans-serif;
+                color: $portfolioTextColor;
+                font-size: 1.8rem;
+            }
+            .view-more-block {
+                display: flex;
+                justify-content: center;
+                .view-more {
+                    font-family: 'RoadRadio-Bold';
+                    background-color: $viewMoreBtnBG;
+                    color: #000;
+                    font-size: 2rem;
+                    padding: 15px 40px 15px 40px;
+                    text-align: center;
+                    margin-top: 15px;
+                    display: inline-block;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                    &:focus {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .right-item {
+            background-image: url('../img/portfolio/work-1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            -ms-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-position: center center;
+            min-height: 400px;
+        }
+    }
+    .bottom-block {
+        padding-top: 85px;
+        .left-item {
+            background-image: url('../img/portfolio/work-3.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            -ms-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-position: center center;
+            min-height: 400px;
+            margin-top: 85px;
+            h3 {
+                font-family: 'RoadRadio-Thin';
+                color: $portfolioTextColor;
+                font-size: 2.5rem;
+                padding-top: 50px;
+            }
+            h2 {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 3.5rem;
+                color: #fff;
+                margin-top: 0;
+            }
+            p {
+                font-family: 'Open Sans', sans-serif;
+                color: $portfolioTextColor;
+                font-size: 1.8rem;
+            }
+            .view-more-block {
+                display: flex;
+                justify-content: center;
+                .view-more {
+                    font-family: 'RoadRadio-Bold';
+                    background-color: $viewMoreBtnBG;
+                    color: #000;
+                    font-size: 2rem;
+                    padding: 15px 40px 15px 40px;
+                    text-align: center;
+                    margin-top: 15px;
+                    display: inline-block;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                    &:focus {
+                        text-decoration: none;
+                        outline: 0;
+                    }
+                }
+            }
+        }
+        .right-item {
+            background-image: url('../img/portfolio/work-2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            -ms-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-position: center center;
+            min-height: 400px;
+            margin-top: 85px;
+        }
+    }
+}
+
+#show-hide {
+    .view-more-block {
+        display: flex;
+        justify-content: center;
+        .view-more {
+            font-family: 'RoadRadio-Bold';
+            background-color: $viewMoreBtnBG;
+            color: #000;
+            font-size: 2rem;
+            padding: 15px 40px 15px 40px;
+            text-align: center;
+            margin-top: 15px;
+            display: inline-block;
+            border: 0;
+            &:hover {
+                text-decoration: none;
+                border: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #portfolio {
+        .bottom-block {
+            .right-item {
+                margin-top: 0;
+            }
+            .left-item {
+                margin-top: 0px;
+                margin-bottom: 60px;
+                h3 {
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #portfolio {
+        .line-block {
+            padding-top: 50px;
+            img {
+                max-width: 70%;
+                margin: 0 auto;
+            }
+        }
+        .head-text {
+            padding-bottom: 10px;
+            h2 {
+                font-size: 2.7rem;
+            }
+        }
+        .top-block .left-item {
+            h3 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 1.4rem;
+            }
+            .view-more-block {
+                padding-bottom: 55px;
+                .view-more {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        .bottom-block .left-item {
+            h3 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 1.4rem;
+            }
+            .view-more-block {
+                padding-bottom: 55px;
+                .view-more {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
