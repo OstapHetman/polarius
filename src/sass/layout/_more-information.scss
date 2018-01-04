@@ -1,18 +1,18 @@
 .modal-dialog.more-information {
-    max-width: 768px;
+    max-width: 1250px;
     top: 5%;
     .modal-content {
         padding: 25px;
     }
     .modal-header {
-        font-family: 'Open Sans', sans-serif;
+        font-family: RoadRadio-Thin;
         h4 {
             font-size: 2.4rem;
             font-weight: bold;
         }
     }
     .modal-body {
-        font-family: 'Open Sans', sans-serif;
+        font-family: RoadRadio-Thin;
         display: flex;
         flex-direction: row;
         padding-bottom: 0;
@@ -61,14 +61,19 @@
                 margin-top: 0;
             }
             p {
+                font-family: RoadRadio-Thin;
                 text-align: justify;
                 font-weight: 100;
                 font-size: 1.3rem;
             }
         }
     }
+    .top-part {
+        max-width: 500px;
+    }
     .bottom-part {
         display: flex;
+        font-family: RoadRadio-Thin;
         .right-column {
             padding-left: 20px;
             p {
@@ -89,9 +94,15 @@
     }
 }
 
+@media screen and (max-width: 1260px) {
+    .modal-dialog.more-information {
+        overflow-x: scroll;
+    }
+}
+
 @media (min-width: 768px) {
     .modal-dialog.more-information {
-        width: 760px;
+        width: 1250px;
     }
 }
 
