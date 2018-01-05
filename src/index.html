@@ -52,20 +52,23 @@
 
             <div class="item active">
                 <div class="carousel-caption luxury">
-                    <h1>Напольные покрытия класса «Люкс»</h1>
+                    <h1>Коллекция<br>паркета Polarius</h1>
+                    <h2>Коллекция паркета Polarius. Выдержанность и экологичность натурального дерева. Для изысканных решений. Мы поможем подобрать идеальное решение для Вашего проекта</h2>
                     <p><a class="view-more" href="parket.html" role="button">В каталог</a></p>
                 </div>
             </div>
-            <div class="item">
+            <div class="item item1">
                 <div class="carousel-caption ideal">
-                    <h1>ИДЕАЛЬНЫЙ ПОЛ ДЛЯ ВАШЕГО ДОМА</h1>
-                    <p><a class="view-more" href="laminat.html" role="button">В каталог</a></p>
+                    <h1>Коллекция<br>винила Polarius</h1>
+                    <h2>Коллекция винила Polarius. Новый взгляд на практичность и долговечность винилового покрытия. Наши специалисты помогут подобрать идеальное решение для Вашего проекта</h2>
+                    <p><a class="view-more" href="vinil.html" role="button">В каталог</a></p>
                 </div>
             </div>
-            <div class="item">
+            <div class="item item2">
                 <div class="carousel-caption third-caption">
-                    <h1>Превращаем интерьер в искусство. Убедитесь в этом сами или поручите Вашему дизайнеру</h1>
-                    <p><a class="view-more" href="vinil.html" role="button">В каталог</a></p>
+                    <h1>Коллекция<br>ламината Polarius</h1>
+                    <h2>Коллекция ламината Polarius . Прекрасное сочетание доступности, обилия декоров и простота эксплуатации. Наши специалисты помогут подобрать идеальное решение для Вашего проекта.</h2>
+                    <p><a class="view-more" href="laminat.html" role="button">В каталог</a></p>
                 </div>
             </div>
         </div>
@@ -79,6 +82,51 @@
         </a>
     </div>
     <!-- END CAROUSEL -->
+
+    <!-- START PRODUCT DESCRIPTION -->
+    @@include('components/products/home/m1.html')
+    <!-- ================================== -->
+    @@include('components/products/home/m2.html')
+    <!-- ================================== -->
+    @@include('components/products/home/m3.html')
+    <!-- ================================== -->
+    @@include('components/products/home/m4.html')
+    <!-- ================================== -->
+    @@include('components/products/home/m5.html')
+    <!-- ================================== -->
+    @@include('components/products/home/m6.html')
+    <!-- END PRODUCT DESCRIPTION -->
+    <!-- START MODAL -->
+    <div class="modal fade" id="download2" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <p>Оставьте заявку и наш менеджер свяжется с Вами в течение 1 минути!</p>
+                    <form action="mailer.php" method="post">
+
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Ваше имя" aria-describedby="basic-addon1" name="name">
+                            <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Ваш номер" aria-describedby="basic-addon1" name="phone">
+                            <span class="input-group-addon" id="basic-addon1"> <span class="glyphicon glyphicon-earphone"></span> </span>
+                        </div>
+
+                        <button type="submit" name="button">Перезвоните мне</button>
+                    </form>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!-- END MODAL -->
 
     <!-- START INFORMATION BLOCK -->
     <section id="make-your-home">
@@ -457,7 +505,7 @@
                 </div>
                 <div class="col-md-3 catalog-item">
                     <div class="parket-photo">
-                        <img src="img/top/parket-2.png" alt="parket-1">
+                        <img src="img/top/parket-2.png" alt="parket-1" data-toggle="modal" data-target="#desc2">
                     </div>
                     <div class="description">
                         <h3>Модульный паркет СHEVRON 85/60°</h3>
@@ -474,7 +522,7 @@
 
                 <div class="col-md-3 catalog-item">
                     <div class="parket-photo">
-                        <img src="img/top/parket-3.png" alt="parket-1">
+                        <img src="img/top/parket-3.png" alt="parket-1" data-toggle="modal" data-target="#desc3">
                     </div>
                     <div class="description">
                         <h3>Модульный паркет СHEVRON 85/45°</h3>
@@ -494,7 +542,7 @@
                 <div class="col-md-3 catalog-item">
 
                     <div class="parket-photo">
-                        <img src="img/top/parket-1.png" alt="parket-1">
+                        <img src="img/top/parket-1.png" alt="parket-1" data-toggle="modal" data-target="#desc4">
                     </div>
                     <div class="description">
                         <h3>Модульный паркет СHEVRON 85/45°</h3>
@@ -511,7 +559,7 @@
 
                 <div class="col-md-3 catalog-item">
                     <div class="parket-photo">
-                        <img src="img/top/parket-2.png" alt="parket-1">
+                        <img src="img/top/parket-2.png" alt="parket-1" data-toggle="modal" data-target="#desc5">
                     </div>
                     <div class="description">
                         <h3>Модульный паркет СHEVRON 85/60°</h3>
@@ -528,7 +576,7 @@
 
                 <div class="col-md-3 catalog-item">
                     <div class="parket-photo">
-                        <img src="img/top/parket-3.png" alt="parket-1">
+                        <img src="img/top/parket-3.png" alt="parket-1" data-toggle="modal" data-target="#desc6">
                     </div>
                     <div class="description">
                         <h3>Модульный паркет СHEVRON 85/45°</h3>
@@ -567,7 +615,7 @@
                         <h2>01</h2>
                     </div>
                     <div class="text">
-                        <p>Покрытия класса «Люкс». В нашей сети фирменных магазинов Вы найдете только высококлассные напольные материалы от запатентованных торговых марок.</p>
+                        <p>Покрытия класса «Люкс». В нашей сети фирменных магазинов Вы найдете только высококлассные напольные материалы от лучших украинских и европейских производителей.</p>
                     </div>
                 </div>
 
@@ -594,7 +642,7 @@
                         <h2>04</h2>
                     </div>
                     <div class="text">
-                        <p>Поддерживаем гарантию изготовителя на<br>напольные покрытия 10 лет</p>
+                        <p>Идеальный пол для вашего дома - превращаем интерьер в искусство. Убедитесь в этом сами или поручите вашему дизайнеру</p>
                     </div>
                 </div>
             </div>
@@ -673,35 +721,29 @@
                         <div class="carousel-inner">
                             <div class="item active">
                                 <div class="col-xs-4">
-                                    <a href="#1"><img src="img/partners/logoG.png" class="img-responsive logoG"></a>
+                                    <a href="#1"><img src="img/partners/logo1.png" class="img-responsive logoG"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-xs-4">
-                                    <a href="#1"><img src="img/partners/novard.png" class="img-responsive"></a>
+                                    <a href="#1"><img src="img/partners/logo2.png" class="img-responsive"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-xs-4">
-                                    <a href="#1"><img src="img/partners/smi_sber_logo_.png" class="img-responsive smi"></a>
+                                    <a href="#1"><img src="img/partners/logo3.png" class="img-responsive smi"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-xs-4">
-                                    <a href="#1"><img src="img/partners/novard.png" class="img-responsive"></a>
+                                    <a href="#1"><img src="img/partners/logo4.png" class="img-responsive"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-xs-4">
-                                    <a href="#1"><img src="img/partners/smi_sber_logo_.png" class="img-responsive smi"></a>
+                                    <a href="#1"><img src="img/partners/logo5.png" class="img-responsive smi"></a>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="col-xs-4">
-                                    <a href="#1"><img src="img/partners/logoG.png" class="img-responsive logoG"></a>
-                                </div>
-                            </div>
-
                             <!-- add  more items here -->
                             <!-- Example item start:  -->
 
@@ -735,6 +777,24 @@
     </section>
     <!-- END DOWNLOAD -->
 
+    <!-- START GOOGLE MAPS MODAL -->
+    <!-- Modal -->
+    <div class="modal fade" id="googleMap" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Украина, г. Киев Проспект Победы, 4</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.6332834823197!2d30.48696131543936!3d50.44793097947502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce8bbee69233%3A0x6257545dc3f36c48!2z0L_RgNC-0YHQv9C10LrRgiDQn9C10YDQtdC80L7Qs9C4LCA0LCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1suk!2sua!4v1515061125519"
+                        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END GOOGLE MAPS MODAL -->
+
     <!-- START CONTACT FOOTER -->
     <section id="footer-contact">
         <div class="container">
@@ -743,9 +803,10 @@
                     <div class="col-md-3">
                         <h1>ТОВАРЫ</h1>
                         <ul>
-                            <li><a href="laminat.html">Модульный ламинат</a></li>
-                            <li><a href="parket.html">Паркетная доска</a></li>
-                            <li><a href="vinil.html">Модульный винил</a></li>
+                            <li><a href="laminat.html">Ламинат</a></li>
+                            <li><a href="parket.html">Паркет</a></li>
+                            <li><a href="vinil.html">Винил</a></li>
+                            <li><a href="accessories.html">Aксессуары</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 col-md-offset-1">
@@ -758,9 +819,8 @@
                     <div class="col-md-3 col-md-offset-1 contacts">
                         <h1>КОНТАКТЫ</h1>
                         <ul>
-                            <li>Украина, г. Киев</li>
-                            <li>Проспект Победы, 4</li>
-                            <li><a href="tel:+380 (67) 507 56-09"> +380 (67) 507 56-09</a></li>
+                            <li data-toggle="modal" data-target="#googleMap">г. Киев, Проспект Победы, 4</li>
+                            <li><a href="tel:+38 044 209 97 57"> +38 044 209 97 57</a></li>
                         </ul>
                     </div>
                 </div>
@@ -799,7 +859,6 @@
     <script src="js/multi-item-carousel.js"></script>
     <!-- Carousel File -->
     <!-- <script src="js/modal.js"></script> -->
-
 </body>
 
 </html>

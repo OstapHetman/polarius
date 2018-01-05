@@ -43,115 +43,106 @@ btn10.addEventListener("click", showHide10);
 
 // 1
 function showHide1() {
+    block1_1.style.display = "none";
+    block1_2.style.display = "none";
     if (block1_1.style.display === "none" & block1_2.style.display === "none") {
         block1_1.style.display = "flex";
         block1_2.style.display = "flex";
         btn1.style.display = "none";
-    } else {
-        block1_1.style.display = "none";
-        block1_2.style.display = "none";
+        console.log('if block');
     }
 }
 
 // 2
 function showHide2() {
+    block2_1.style.display = "none";
+    block2_2.style.display = "none";
     if (block2_1.style.display === "none" & block2_2.style.display === "none") {
         block2_1.style.display = "flex";
         block2_2.style.display = "flex";
         btn2.style.display = "none";
-    } else {
-        block2_1.style.display = "none";
-        block2_2.style.display = "none";
     }
 }
 // 3
 function showHide3() {
+    block3_1.style.display = "none";
+    block3_2.style.display = "none";
     if (block3_1.style.display === "none" & block3_2.style.display === "none") {
         block3_1.style.display = "flex";
         block3_2.style.display = "flex";
         btn3.style.display = "none";
-    } else {
-        block3_1.style.display = "none";
-        block3_2.style.display = "none";
     }
 }
 // 4
 function showHide4() {
+    block4_1.style.display = "none";
+    block4_2.style.display = "none";
     if (block4_1.style.display === "none" & block4_2.style.display === "none") {
         block4_1.style.display = "flex";
         block4_2.style.display = "flex";
         btn4.style.display = "none";
-    } else {
-        block4_1.style.display = "none";
-        block4_2.style.display = "none";
     }
 }
 
 // 5
 function showHide5() {
+    block5_1.style.display = "none";
+    block5_2.style.display = "none";
     if (block5_1.style.display === "none" & block5_2.style.display === "none") {
         block5_1.style.display = "flex";
         block5_2.style.display = "flex";
         btn5.style.display = "none";
-    } else {
-        block5_1.style.display = "none";
-        block5_2.style.display = "none";
     }
 }
 
 // 6
 function showHide6() {
+    block6_1.style.display = "none";
+    block6_2.style.display = "none";
     if (block6_1.style.display === "none" & block6_2.style.display === "none") {
         block6_1.style.display = "flex";
         block6_2.style.display = "flex";
         btn6.style.display = "none";
-    } else {
-        block6_1.style.display = "none";
-        block6_2.style.display = "none";
     }
 }
 // 7
 function showHide7() {
+    block7_1.style.display = "none";
+    block7_2.style.display = "none";
     if (block7_1.style.display === "none" & block7_2.style.display === "none") {
         block7_1.style.display = "flex";
         block7_2.style.display = "flex";
         btn7.style.display = "none";
-    } else {
-        block7_1.style.display = "none";
-        block7_2.style.display = "none";
     }
 }
 
 // 8
 function showHide8() {
+    block8_1.style.display = "none";
+    block8_2.style.display = "none";
     if (block8_1.style.display === "none" & block8_2.style.display === "none") {
         block8_1.style.display = "flex";
         block8_2.style.display = "flex";
         btn8.style.display = "none";
-    } else {
-        block8_1.style.display = "none";
-        block8_2.style.display = "none";
     }
 }
 // 9
 function showHide9() {
+    block9_1.style.display = "none";
+    block9_2.style.display = "none";
     if (block9_1.style.display === "none" & block9_2.style.display === "none") {
         block9_1.style.display = "flex";
         block9_2.style.display = "flex";
         btn9.style.display = "none";
-    } else {
-        block9_1.style.display = "none";
-        block9_2.style.display = "none";
     }
 }
 // 10
 function showHide10() {
+    block10_1.style.display = "none";
+    block10_2.style.display = "none";
     if (block10_1.style.display === "none" & block10_2.style.display === "none") {
         block10_1.style.display = "flex";
         block10_2.style.display = "flex";
         btn10.style.display = "none";
-    } else {
-        block10_1.style.display = "none";
-        block10_2.style.display = "none";
     }
 }

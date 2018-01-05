@@ -53,7 +53,7 @@ gulp.task('watch', function() {
 // });
 
 gulp.task('fileinclude', function() {
-    gulp.src(['src/vinil.html', 'src/parket.html', 'src/laminat.html'])
+    gulp.src(['src/accessories.html', 'src/index.html', 'src/vinil.html', 'src/parket.html', 'src/laminat.html'])
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'

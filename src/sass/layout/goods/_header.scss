@@ -1,6 +1,5 @@
 #goods {
     header {
-        background-image: url('../img/header/header-1.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         -ms-background-size: cover;
@@ -9,6 +8,19 @@
         -webkit-background-size: cover;
         background-position: center center;
         min-height: 900px;
+        background-image: url('../img/header/header3.jpg');
+        &.laminat {
+            background-image: url('../img/header/header3.jpg') !important;
+        }
+        &.parket {
+            background-image: url('../img/header/header1.jpg') !important;
+        }
+        &.vinil {
+            background-image: url('../img/header/header2.jpg') !important;
+        }
+        &.accessories {
+            background-image: url('../img/header/header3.jpg') !important;
+        }
         .carousel-caption {
             font-family: 'RoadRadio-Bold';
             right: 8%;

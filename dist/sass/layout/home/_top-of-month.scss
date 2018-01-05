@@ -41,6 +41,9 @@ $priceColor: #403704;
         }
         img {
             width: 100%;
+            &:hover {
+                cursor: pointer;
+            }
         }
         .category {
             h2 {
